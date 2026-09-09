@@ -1,7 +1,7 @@
 const copy = {
   en: {
     navCompany: 'Company', navServices: 'Services', navProjects: 'Projects', navNetwork: 'Global network', navContact: 'Contact',
-    weatherLoading: 'Loading live conditions…', weatherUnavailable: 'Live weather is temporarily unavailable.', weatherCached: 'Last available data', weatherClear: 'Clear', weatherPartlyCloudy: 'Partly cloudy', weatherOvercast: 'Overcast', weatherFog: 'Fog', weatherDrizzle: 'Drizzle', weatherRain: 'Rain', weatherShowers: 'Showers', weatherSnow: 'Snow', weatherThunder: 'Thunderstorm', weatherUnknown: 'Weather',
+    weatherLoading: 'Loading live conditions…', weatherUnavailable: 'Live weather is temporarily unavailable.', weatherCached: 'Last available data', weatherClear: 'Clear', weatherPartlyCloudy: 'Partly cloudy', weatherOvercast: 'Overcast', weatherFog: 'Fog', weatherDrizzle: 'Drizzle', weatherRain: 'Rain', weatherShowers: 'Showers', weatherSnow: 'Snow', weatherThunder: 'Thunderstorm', weatherUnknown: 'Weather', weatherSource: 'Weather data: Open-Meteo',
     heroEyebrow: 'Headquartered in China · Global marine technical services', heroTitle: 'Engineering certainty.', heroTitleOutline: 'Wherever your vessel needs it.',
     heroCopy: "Headquartered in China, SMH Marine protects the owner's technical and commercial interests throughout shipyard projects—controlling scope, cost and delivery from major repairs to newbuilding support.",
     heroCta: 'See how we protect owners', heroNetwork: 'View global network', factYears: 'Years of marine experience', factLocations: 'Service network locations', factCoordination: 'Technical coordination', factChinaWord: 'CHINA', factChina: 'Headquarters & strongest shipyard base',
@@ -38,7 +38,7 @@ const copy = {
   },
   tr: {
     navCompany: 'Kurumsal', navServices: 'Hizmetler', navProjects: 'Projeler', navNetwork: 'Küresel ağ', navContact: 'İletişim',
-    weatherLoading: 'Canlı hava durumu yükleniyor…', weatherUnavailable: 'Canlı hava durumu geçici olarak alınamıyor.', weatherCached: 'Son alınan veri', weatherClear: 'Açık', weatherPartlyCloudy: 'Parçalı bulutlu', weatherOvercast: 'Kapalı', weatherFog: 'Sisli', weatherDrizzle: 'Çisenti', weatherRain: 'Yağmurlu', weatherShowers: 'Sağanak', weatherSnow: 'Karlı', weatherThunder: 'Gök gürültülü', weatherUnknown: 'Hava durumu',
+    weatherLoading: 'Canlı hava durumu yükleniyor…', weatherUnavailable: 'Canlı hava durumu geçici olarak alınamıyor.', weatherCached: 'Son alınan veri', weatherClear: 'Açık', weatherPartlyCloudy: 'Parçalı bulutlu', weatherOvercast: 'Kapalı', weatherFog: 'Sisli', weatherDrizzle: 'Çisenti', weatherRain: 'Yağmurlu', weatherShowers: 'Sağanak', weatherSnow: 'Karlı', weatherThunder: 'Gök gürültülü', weatherUnknown: 'Hava durumu', weatherSource: 'Hava verisi: Open-Meteo',
     heroEyebrow: 'Çin merkezli · Küresel denizcilik ve teknik hizmetler', heroTitle: 'Mühendislikte güven.', heroTitleOutline: 'Geminiz nerede olursa olsun.',
     heroCopy: 'Merkezi Çin’de bulunan SMH Marine, tersane projelerinde armatörün teknik ve ticari haklarını korur; ağır onarımdan yeni inşa desteğine kadar kapsamı, maliyeti ve teslim sürecini kontrol eder.',
     heroCta: 'Armatörün haklarını nasıl koruduğumuzu görün', heroNetwork: 'Küresel ağı görüntüleyin', factYears: 'Yıllık denizcilik deneyimi', factLocations: 'Hizmet ağı noktası', factCoordination: 'Koordine edilen proje', factChinaWord: 'ÇİN', factChina: 'Merkez ve en güçlü tersane ağı',
