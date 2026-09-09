@@ -93,7 +93,19 @@ const markerOffsets = {
   Singapore: [-7, -3], 'Batam, Indonesia': [7, 5], 'Bangkok, Thailand': [-2, -8]
 };
 
-const state = { language: localStorage.getItem('smh-language') === 'tr' ? 'tr' : 'en', region: 'all' };
+function getInitialLanguage() {
+  try {
+    const savedLanguage = localStorage.getItem('smh-language');
+    if (savedLanguage === 'tr' || savedLanguage === 'en') return savedLanguage;
+  } catch {
+    // Continue with the browser language when storage is unavailable.
+  }
+
+  const browserLanguage = (navigator.languages?.[0] || navigator.language || 'en').toLowerCase();
+  return browserLanguage === 'tr' || browserLanguage.startsWith('tr-') ? 'tr' : 'en';
+}
+
+const state = { language: getInitialLanguage(), region: 'all' };
 const menuButton = document.querySelector('[data-menu-toggle]');
 const navigation = document.querySelector('[data-nav]');
 const languageButton = document.querySelector('[data-language]');
@@ -182,12 +194,23 @@ function translate() {
   setMapDetail(null);
 }
 
-if (menuButton && navigation) {
-  menuButton.addEventListener('click', () => { const open = navigation.classList.toggle('is-open'); menuButton.setAttribute('aria-expanded', String(open)); });
-  navigation.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => { navigation.classList.remove('is-open'); menuButton.setAttribute('aria-expanded', 'false'); }));
+function closeMobileMenu() {
+  navigation?.classList.remove('is-open');
+  menuButton?.setAttribute('aria-expanded', 'false');
 }
 
-languageButton?.addEventListener('click', () => { state.language = state.language === 'en' ? 'tr' : 'en'; localStorage.setItem('smh-language', state.language); translate(); });
+if (menuButton && navigation) {
+  menuButton.addEventListener('click', () => { const open = navigation.classList.toggle('is-open'); menuButton.setAttribute('aria-expanded', String(open)); });
+  navigation.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMobileMenu));
+  document.addEventListener('keydown', (event) => { if (event.key === 'Escape') closeMobileMenu(); });
+}
+
+languageButton?.addEventListener('click', () => {
+  state.language = state.language === 'en' ? 'tr' : 'en';
+  try { localStorage.setItem('smh-language', state.language); } catch { /* Language still changes for this visit. */ }
+  translate();
+  closeMobileMenu();
+});
 window.addEventListener('scroll', () => header?.classList.toggle('is-scrolled', window.scrollY > 24), { passive: true });
 
 const enquiryForm = document.querySelector('[data-enquiry-form]');
