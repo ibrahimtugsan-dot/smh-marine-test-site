@@ -26,7 +26,8 @@ body {
 img { display: block; max-width: 100%; }
 a { color: inherit; }
 button, a { -webkit-tap-highlight-color: transparent; }
-h1, h2, h3, h4, p, li, label, strong, small { min-width: 0; word-break: normal; overflow-wrap: break-word; hyphens: auto; }
+h1, h2, h3, h4, p, li, label, strong, small { min-width: 0; word-break: normal; overflow-wrap: break-word; -webkit-hyphens: none; hyphens: none; }
+h1, h2, h3, h4 { text-wrap: balance; }
 .shell { width: var(--shell); margin-inline: auto; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
 .skip-link { position: fixed; top: 8px; left: 8px; z-index: 100; transform: translateY(-150%); padding: 10px 14px; background: white; color: var(--ink); }
