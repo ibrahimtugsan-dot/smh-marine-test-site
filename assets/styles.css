@@ -207,6 +207,9 @@ h2 { margin: 0; font-size: clamp(2.3rem, 4.7vw, 4.5rem); letter-spacing: -.045em
 .service-card-featured p { color: rgba(255,255,255,.68); }
 .service-card a { position: absolute; bottom: 34px; text-decoration: none; font-size: .86rem; font-weight: 750; }
 .service-card a span { margin-left: 10px; color: var(--orange); }
+.service-card-retrofit { grid-column: 1 / -1; min-height: 280px; color: white; background: linear-gradient(115deg, var(--ink-soft), #0d4e77); }
+.service-card-retrofit:hover { background: linear-gradient(115deg, var(--ink), #0a4165); }
+.service-card-retrofit p { max-width: 780px; color: rgba(255,255,255,.7); }
 .capabilities-section { color: white; background: var(--ink); }
 .section-heading-light > p { color: rgba(255,255,255,.62); }
 .capability-list { border-top: 1px solid rgba(255,255,255,.18); }
@@ -228,6 +231,9 @@ h2 { margin: 0; font-size: clamp(2.3rem, 4.7vw, 4.5rem); letter-spacing: -.045em
 .expertise-link-grid strong { max-width: 280px; margin-top: 42px; font-size: 1.4rem; line-height: 1.2; }
 .expertise-link-grid small { margin-top: auto; color: #647b8b; font-size: .78rem; font-weight: 700; }
 .expertise-link-grid a:hover small { color: rgba(255,255,255,.64); }
+.expertise-link-grid .expertise-link-featured { grid-column: 1 / -1; min-height: 190px; color: white; background: linear-gradient(115deg, var(--ink-soft), #0d4e77); }
+.expertise-link-grid .expertise-link-featured small { color: rgba(255,255,255,.64); }
+.expertise-link-grid .expertise-link-featured strong { max-width: 620px; }
 
 .network-section { overflow: hidden; background: #e9eef1; }
 .network-heading { display: grid; grid-template-columns: 1fr 360px; gap: 90px; align-items: end; margin-bottom: 55px; }
@@ -474,6 +480,7 @@ html[lang="tr"] .hero h1 { letter-spacing: -.045em; line-height: 1; }
   .owner-advantage-body { padding: 28px 22px; }
   .owner-controls { grid-template-columns: 1fr; }
   .service-grid { grid-template-columns: 1fr; }
+  .service-card-retrofit { grid-column: auto; }
   .service-card { min-height: 300px; padding: 30px 26px; }
   .service-card h3 { font-size: clamp(1.55rem, 7vw, 1.85rem); line-height: 1.12; }
   .hero-network { bottom: 182px; width: calc(100% - 28px); }
