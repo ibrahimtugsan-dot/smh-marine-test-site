@@ -1,6 +1,7 @@
 const copy = {
   en: {
     navCompany: 'Company', navServices: 'Services', navProjects: 'Projects', navNetwork: 'Global network', navContact: 'Contact',
+    weatherLabel: 'PORT WEATHER', weatherLoading: 'Loading live conditions…', weatherUnavailable: 'Live weather is temporarily unavailable.', weatherCached: 'Last available data', weatherClear: 'Clear', weatherPartlyCloudy: 'Partly cloudy', weatherOvercast: 'Overcast', weatherFog: 'Fog', weatherDrizzle: 'Drizzle', weatherRain: 'Rain', weatherShowers: 'Showers', weatherSnow: 'Snow', weatherThunder: 'Thunderstorm', weatherUnknown: 'Weather',
     heroEyebrow: 'Headquartered in China · Global marine technical services', heroTitle: 'Engineering certainty.', heroTitleOutline: 'Wherever your vessel needs it.',
     heroCopy: "Headquartered in China, SMH Marine protects the owner's technical and commercial interests throughout shipyard projects—controlling scope, cost and delivery from major repairs to newbuilding support.",
     heroCta: 'See how we protect owners', heroNetwork: 'View global network', factYears: 'Years of marine experience', factLocations: 'Service network locations', factCoordination: 'Technical coordination', factChinaWord: 'CHINA', factChina: 'Headquarters & strongest shipyard base',
@@ -37,6 +38,7 @@ const copy = {
   },
   tr: {
     navCompany: 'Kurumsal', navServices: 'Hizmetler', navProjects: 'Projeler', navNetwork: 'Küresel ağ', navContact: 'İletişim',
+    weatherLabel: 'LİMAN HAVA', weatherLoading: 'Canlı hava durumu yükleniyor…', weatherUnavailable: 'Canlı hava durumu geçici olarak alınamıyor.', weatherCached: 'Son alınan veri', weatherClear: 'Açık', weatherPartlyCloudy: 'Parçalı bulutlu', weatherOvercast: 'Kapalı', weatherFog: 'Sisli', weatherDrizzle: 'Çisenti', weatherRain: 'Yağmurlu', weatherShowers: 'Sağanak', weatherSnow: 'Karlı', weatherThunder: 'Gök gürültülü', weatherUnknown: 'Hava durumu',
     heroEyebrow: 'Merkezi Çin’de · Küresel denizcilik teknik hizmetleri', heroTitle: 'Mühendislikte güven.', heroTitleOutline: 'Geminiz nerede olursa olsun.',
     heroCopy: 'Merkezi Çin’de bulunan SMH Marine, tersane projelerinde armatörün teknik ve ticari haklarını korur; ağır onarımdan yeni inşa desteğine kadar kapsamı, maliyeti ve teslim sürecini kontrol eder.',
     heroCta: 'Armatör avantajını inceleyin', heroNetwork: 'Küresel ağı görüntüleyin', factYears: 'Yıllık denizcilik deneyimi', factLocations: 'Hizmet ağı noktası', factCoordination: 'Teknik koordinasyon', factChinaWord: 'ÇİN', factChina: 'Merkez ve en güçlü tersane ağı',
@@ -92,6 +94,120 @@ const markerOffsets = {
   Oman: [11, 5], Dubai: [6, -4], Bahrain: [-8, -2], Qatar: [1, 7], Shanghai: [8, 2], Dalian: [8, -9], Nantong: [-8, 0], Zhoushan: [9, 9], Tianjin: [-8, -9],
   Singapore: [-7, -3], 'Batam, Indonesia': [7, 5], 'Bangkok, Thailand': [-2, -8]
 };
+
+const WEATHER_CACHE_KEY = 'smh-port-weather-v1';
+const WEATHER_REFRESH_MS = 15 * 60 * 1000;
+const WEATHER_CACHE_MAX_AGE = 3 * 60 * 60 * 1000;
+const weatherTicker = document.querySelector('[data-weather-ticker]');
+let weatherSnapshot = null;
+
+function weatherVisual(code, isDay) {
+  if (code === 0) return { icon: isDay ? '☀️' : '🌙', key: 'weatherClear' };
+  if (code === 1 || code === 2) return { icon: isDay ? '🌤️' : '☁️', key: 'weatherPartlyCloudy' };
+  if (code === 3) return { icon: '☁️', key: 'weatherOvercast' };
+  if (code === 45 || code === 48) return { icon: '🌫️', key: 'weatherFog' };
+  if ([51, 53, 55, 56, 57].includes(code)) return { icon: '🌦️', key: 'weatherDrizzle' };
+  if ([61, 63, 65, 66, 67].includes(code)) return { icon: '🌧️', key: 'weatherRain' };
+  if ([71, 73, 75, 77, 85, 86].includes(code)) return { icon: '❄️', key: 'weatherSnow' };
+  if ([80, 81, 82].includes(code)) return { icon: '🌦️', key: 'weatherShowers' };
+  if ([95, 96, 99].includes(code)) return { icon: '⛈️', key: 'weatherThunder' };
+  return { icon: '🌡️', key: 'weatherUnknown' };
+}
+
+function roundedWeatherValue(value) {
+  return Number.isFinite(Number(value)) ? Math.round(Number(value)) : null;
+}
+
+function renderWeather(snapshot, stale = false) {
+  if (!weatherTicker || !snapshot?.items?.length) return;
+  const dictionary = copy[state.language];
+  const items = snapshot.items.map((item, index) => {
+    const location = locations[index];
+    const visual = weatherVisual(item.code, item.isDay);
+    const temperature = roundedWeatherValue(item.temperature);
+    const high = roundedWeatherValue(item.high);
+    const low = roundedWeatherValue(item.low);
+    const rain = roundedWeatherValue(item.rain);
+    const city = location?.name[state.language] || location?.name.en || '';
+    const condition = dictionary[visual.key];
+    return `<span class="weather-item"><span class="weather-icon" aria-hidden="true">${visual.icon}</span><strong class="weather-city">${city}</strong><span class="weather-temp">${temperature ?? '–'}°</span><span class="weather-range">↑${high ?? '–'}° ↓${low ?? '–'}°</span><span class="weather-rain">💧${rain ?? '–'}%</span><span class="weather-condition">${condition}</span><span class="weather-divider" aria-hidden="true"></span></span>`;
+  }).join('');
+  const staleLabel = stale ? `<span class="weather-stale">${dictionary.weatherCached}</span>` : '';
+  const group = `${staleLabel}${items}`;
+  const duration = Math.max(100, snapshot.items.length * 5);
+  weatherTicker.innerHTML = `<div class="weather-track" style="--weather-duration:${duration}s"><div class="weather-group">${group}</div><div class="weather-group" aria-hidden="true">${group}</div></div>`;
+}
+
+function readWeatherCache() {
+  try {
+    const cached = JSON.parse(localStorage.getItem(WEATHER_CACHE_KEY));
+    if (!cached?.timestamp || !Array.isArray(cached.items) || cached.items.length !== locations.length) return null;
+    if (Date.now() - cached.timestamp > WEATHER_CACHE_MAX_AGE) return null;
+    return cached;
+  } catch {
+    return null;
+  }
+}
+
+function writeWeatherCache(snapshot) {
+  try { localStorage.setItem(WEATHER_CACHE_KEY, JSON.stringify(snapshot)); } catch { /* Live data still remains available for this page. */ }
+}
+
+async function fetchWeather() {
+  if (!weatherTicker) return;
+  const latitudes = locations.map((location) => location.lat).join(',');
+  const longitudes = locations.map((location) => location.lon).join(',');
+  const params = new URLSearchParams({
+    latitude: latitudes,
+    longitude: longitudes,
+    current: 'temperature_2m,weather_code,is_day',
+    daily: 'temperature_2m_max,temperature_2m_min,precipitation_probability_max',
+    timezone: 'auto',
+    forecast_days: '1'
+  });
+
+  try {
+    const response = await fetch(`https://api.open-meteo.com/v1/forecast?${params}`, { cache: 'no-store' });
+    if (!response.ok) throw new Error(`Weather request failed: ${response.status}`);
+    const payload = await response.json();
+    const entries = Array.isArray(payload) ? payload : [payload];
+    if (entries.length !== locations.length) throw new Error('Weather response location count mismatch');
+    weatherSnapshot = {
+      timestamp: Date.now(),
+      items: entries.map((entry) => ({
+        temperature: entry.current?.temperature_2m,
+        code: entry.current?.weather_code,
+        isDay: entry.current?.is_day === 1,
+        high: entry.daily?.temperature_2m_max?.[0],
+        low: entry.daily?.temperature_2m_min?.[0],
+        rain: entry.daily?.precipitation_probability_max?.[0]
+      }))
+    };
+    writeWeatherCache(weatherSnapshot);
+    renderWeather(weatherSnapshot);
+  } catch {
+    if (weatherSnapshot) renderWeather(weatherSnapshot, true);
+    else weatherTicker.innerHTML = `<span class="weather-error">${copy[state.language].weatherUnavailable}</span>`;
+  }
+}
+
+function initializeWeather() {
+  if (!weatherTicker) return;
+  const cached = readWeatherCache();
+  const cacheAge = cached ? Date.now() - cached.timestamp : WEATHER_REFRESH_MS;
+  if (cached) {
+    weatherSnapshot = cached;
+    renderWeather(cached, cacheAge >= WEATHER_REFRESH_MS);
+  }
+  const firstRefreshDelay = cached && cacheAge < WEATHER_REFRESH_MS ? WEATHER_REFRESH_MS - cacheAge : 0;
+  window.setTimeout(() => {
+    fetchWeather();
+    window.setInterval(fetchWeather, WEATHER_REFRESH_MS);
+  }, firstRefreshDelay);
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible' && (!weatherSnapshot || Date.now() - weatherSnapshot.timestamp >= WEATHER_REFRESH_MS)) fetchWeather();
+  });
+}
 
 function getInitialLanguage() {
   try {
@@ -192,6 +308,8 @@ function translate() {
   if (urgentLink) urgentLink.textContent = dictionary.urgentButton;
   renderNetwork();
   setMapDetail(null);
+  if (weatherSnapshot) renderWeather(weatherSnapshot, Date.now() - weatherSnapshot.timestamp >= WEATHER_REFRESH_MS);
+  else if (weatherTicker?.querySelector('.weather-error')) weatherTicker.innerHTML = `<span class="weather-error">${dictionary.weatherUnavailable}</span>`;
 }
 
 function closeMobileMenu() {
@@ -261,3 +379,4 @@ urgentLink.href = document.body.dataset.page === 'home' || !document.body.datase
 document.body.appendChild(urgentLink);
 
 translate();
+initializeWeather();

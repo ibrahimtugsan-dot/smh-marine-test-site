@@ -32,10 +32,29 @@ h1, h2, h3, h4, p, li, label, strong, small { min-width: 0; word-break: normal; 
 .skip-link { position: fixed; top: 8px; left: 8px; z-index: 100; transform: translateY(-150%); padding: 10px 14px; background: white; color: var(--ink); }
 .skip-link:focus { transform: translateY(0); }
 
+.weather-strip { position: absolute; z-index: 24; top: 0; right: 0; left: 0; display: grid; height: 42px; grid-template-columns: auto minmax(0,1fr) auto; align-items: center; border-bottom: 1px solid rgba(255,255,255,.14); color: white; background: #031522; overflow: hidden; }
+.weather-strip-label { display: grid; height: 100%; place-items: center; padding: 0 18px; color: var(--orange-bright); background: #082b43; font-size: .68rem; font-weight: 850; letter-spacing: .13em; white-space: nowrap; }
+.weather-strip-window { min-width: 0; overflow: hidden; mask-image: linear-gradient(90deg, transparent, black 18px, black calc(100% - 18px), transparent); }
+.weather-loading, .weather-error { display: block; padding: 0 22px; color: rgba(255,255,255,.62); font-size: .75rem; font-weight: 650; white-space: nowrap; }
+.weather-track { display: flex; width: max-content; animation: weather-scroll var(--weather-duration, 120s) linear infinite; will-change: transform; }
+.weather-strip:hover .weather-track, .weather-strip:focus-within .weather-track { animation-play-state: paused; }
+.weather-group { display: flex; align-items: center; flex: none; gap: 28px; padding: 0 28px 0 18px; }
+.weather-item { display: flex; min-height: 41px; align-items: center; gap: 8px; white-space: nowrap; }
+.weather-icon { width: 25px; font-size: 1.05rem; line-height: 1; text-align: center; }
+.weather-city { font-size: .76rem; font-weight: 800; letter-spacing: .025em; }
+.weather-temp { color: white; font-size: .82rem; font-weight: 850; }
+.weather-range, .weather-rain, .weather-condition { color: rgba(255,255,255,.58); font-size: .68rem; }
+.weather-rain { color: #82c9f4; }
+.weather-divider { width: 1px; height: 18px; background: rgba(255,255,255,.16); }
+.weather-stale { align-self: center; padding: 4px 9px; border: 1px solid rgba(239,122,45,.42); color: var(--orange-bright); font-size: .62rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; white-space: nowrap; }
+.weather-source { display: grid; height: 100%; place-items: center; padding: 0 14px; border-left: 1px solid rgba(255,255,255,.13); color: rgba(255,255,255,.48); background: #031522; font-size: .62rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+.weather-source:hover, .weather-source:focus-visible { color: white; }
+@keyframes weather-scroll { to { transform: translateX(-50%); } }
+
 .site-header {
   position: absolute;
   z-index: 20;
-  top: 0;
+  top: 42px;
   left: 50%;
   display: flex;
   width: min(1240px, calc(100% - 32px));
@@ -347,8 +366,8 @@ a.contact-channel:hover, a.contact-channel:focus-visible { border-color: rgba(23
 html[lang="tr"] .hero h1 { letter-spacing: -.045em; line-height: 1; }
 
 @media (max-width: 1120px) {
-  .hero { min-height: 1060px; align-items: flex-start; }
-  .hero-content { padding-top: 155px; padding-right: 0; }
+  .hero { min-height: 1102px; align-items: flex-start; }
+  .hero-content { padding-top: 197px; padding-right: 0; }
   .hero-content h1, .hero-copy { max-width: 760px; }
   .hero-network { top: auto; right: auto; bottom: 138px; left: 50%; width: min(760px, calc(100% - 40px)); transform: translateX(-50%); }
   .china-grid { gap: 48px; }
@@ -361,12 +380,13 @@ html[lang="tr"] .hero h1 { letter-spacing: -.045em; line-height: 1; }
   .brand { width: 102px; height: 68px; }
   .menu-toggle { display: grid; width: 46px; height: 46px; place-content: center; gap: 5px; border: 1px solid rgba(255,255,255,.45); background: rgba(4,30,49,.4); cursor: pointer; }
   .menu-toggle span:not(.sr-only) { width: 22px; height: 2px; background: white; }
-  .site-nav { position: fixed; inset: 78px 0 auto; display: none; max-height: calc(100dvh - 88px); overflow-y: auto; flex-direction: column; align-items: flex-start; gap: 0; padding: 18px 24px 26px; background: var(--ink); box-shadow: 0 16px 30px rgba(0,0,0,.2); overscroll-behavior: contain; }
+  .site-nav { position: fixed; inset: 120px 0 auto; display: none; max-height: calc(100dvh - 130px); overflow-y: auto; flex-direction: column; align-items: flex-start; gap: 0; padding: 18px 24px 26px; background: var(--ink); box-shadow: 0 16px 30px rgba(0,0,0,.2); overscroll-behavior: contain; }
+  .site-header.is-scrolled .site-nav { top: 82px; max-height: calc(100dvh - 92px); }
   .site-nav.is-open { display: flex; }
   .site-nav a { width: 100%; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,.1); }
   .language-switch { margin-top: 16px; }
-  .hero { min-height: 1040px; padding-bottom: 170px; }
-  .hero-content { padding-top: 130px; }
+  .hero { min-height: 1082px; padding-bottom: 170px; }
+  .hero-content { padding-top: 172px; }
   .hero-facts { grid-template-columns: repeat(2, 1fr); }
   .hero-facts div { min-height: 86px; padding: 14px; }
   .china-grid { grid-template-columns: 1fr; gap: 46px; }
@@ -400,8 +420,15 @@ html[lang="tr"] .hero h1 { letter-spacing: -.045em; line-height: 1; }
   .site-header.is-scrolled { width: calc(100% - 12px); }
   .site-nav { right: 10px; left: 10px; padding: 12px 18px 20px; }
   .site-nav a { padding: 13px 0; font-size: .95rem; }
-  .hero { min-height: 1040px; padding-bottom: 186px; }
-  .hero-content { padding-top: 112px; }
+  .weather-strip { height: 40px; grid-template-columns: auto minmax(0,1fr) auto; }
+  .weather-strip-label { padding: 0 10px; font-size: .6rem; letter-spacing: .09em; }
+  .weather-source { padding: 0 8px; font-size: .56rem; }
+  .weather-group { gap: 20px; padding-right: 20px; padding-left: 12px; }
+  .weather-condition { display: none; }
+  .site-header { top: 40px; }
+  .site-header.is-scrolled { top: 8px; }
+  .hero { min-height: 1080px; padding-bottom: 186px; }
+  .hero-content { padding-top: 150px; }
   .hero h1 { font-size: clamp(2.5rem, 11vw, 3.35rem); line-height: .98; letter-spacing: -.045em; }
   html[lang="tr"] .hero h1 { font-size: clamp(2.35rem, 10.5vw, 3.15rem); line-height: 1.04; letter-spacing: -.035em; }
   .hero h1 .outline-title { -webkit-text-stroke-width: .8px; }
@@ -490,4 +517,7 @@ html[lang="tr"] .hero h1 { letter-spacing: -.045em; line-height: 1; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
   .map-marker::after { animation: none; }
+  .weather-strip-window { overflow-x: auto; mask-image: none; }
+  .weather-track { animation: none; }
+  .weather-group[aria-hidden="true"] { display: none; }
 }
