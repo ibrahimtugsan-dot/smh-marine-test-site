@@ -6,22 +6,23 @@
     <meta name="description" content="SMH Marine project portfolio for ship repair, dry-docking, newbuilding and marine inspection work." />
     <meta name="theme-color" content="#061b2c" />
     <title>Projects | SMH Marine</title>
-    <link rel="stylesheet" href="assets/styles.css?v=53" />
-    <script src="assets/app.js?v=53" defer></script>
+    <link rel="stylesheet" href="assets/styles.css?v=54" />
+    <script src="assets/app.js?v=54" defer></script>
   </head>
   <body data-page="projects">
-    <a class="skip-link" href="#main">Skip to content</a>
-    <aside class="weather-strip" aria-label="Live weather for SMH Marine service locations">
+    <a class="skip-link" href="#main" data-i18n="skipToContent">Skip to content</a>
+    <aside class="weather-strip" aria-label="Live weather for SMH Marine service locations" data-i18n-aria-label="weatherRegionLabel">
       <div class="weather-strip-window" data-weather-ticker><span class="weather-loading" data-i18n="weatherLoading">Loading live conditions…</span></div>
+      <button class="weather-toggle" type="button" data-weather-toggle aria-pressed="false" aria-label="Pause weather ticker" data-i18n-aria-label="pauseWeather"><span aria-hidden="true">⏸</span></button>
     </aside>
     <header class="site-header" data-header>
-      <a class="brand" href="index.html#top" aria-label="SMH Marine home">
-        <img src="assets/smh-marine-logo-cropped.png" alt="SMH Marine" />
+      <a class="brand" href="index.html#top" aria-label="SMH Marine home" data-i18n-aria-label="homeLabel">
+        <img src="assets/smh-marine-logo-cropped.png" alt="SMH Marine" width="1138" height="922" />
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
-        <span></span><span></span><span></span><span class="sr-only">Open menu</span>
+        <span></span><span></span><span></span><span class="sr-only" data-i18n="openMenu">Open menu</span>
       </button>
-      <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-nav>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-i18n-aria-label="primaryNavigation" data-nav>
         <a href="index.html#about" data-i18n="navCompany">Company</a>
         <a href="index.html#services" data-i18n="navServices">Services</a>
         <a class="is-current" href="projects.html" aria-current="page" data-i18n="navProjects">Projects</a>
@@ -31,13 +32,13 @@
       </nav>
     </header>
 
-    <main id="main">
+    <main id="main" tabindex="-1">
       <section class="projects-hero" aria-labelledby="projects-title">
         <div class="projects-hero-media" aria-hidden="true"></div>
         <div class="shell projects-hero-content">
           <p class="eyebrow" data-i18n="projectsKicker">Project portfolio</p>
-          <h1 id="projects-title" data-i18n="projectsTitle">Proven work. Documented properly.</h1>
-          <p data-i18n="projectsIntro">Approved photographs and concise technical records from completed ship repair, dry-docking, newbuilding and inspection projects will be presented here.</p>
+          <h1 id="projects-title" data-i18n="projectsTitle">Project experience</h1>
+          <p data-i18n="projectsIntro">Explore our areas of project experience in ship repair, dry-docking, newbuilding and inspection.</p>
         </div>
       </section>
 
@@ -45,10 +46,10 @@
         <div class="shell portfolio-layout">
           <div class="portfolio-status">
             <p class="section-kicker" data-i18n="projectsStatusLabel">Portfolio status</p>
-            <h2 id="portfolio-status-title" data-i18n="projectsStatusTitle">Approved project material pending</h2>
-            <p data-i18n="projectsStatusCopy">The project page is ready. Real project photography, vessel-safe descriptions and confirmed scope details will be added after review.</p>
+            <h2 id="portfolio-status-title" data-i18n="projectsStatusTitle">Project portfolio coming soon</h2>
+            <p data-i18n="projectsStatusCopy">Project photographs and technical case studies are being prepared. Contact us to discuss experience relevant to your vessel.</p>
           </div>
-          <div class="project-category-grid" aria-label="Project categories">
+          <div class="project-category-grid" aria-label="Project categories" data-i18n-aria-label="projectCategoriesLabel">
             <div><span>01</span><strong data-i18n="projectCategoryRepair">Major repair</strong></div>
             <div><span>02</span><strong data-i18n="projectCategoryDocking">Dry-docking & steel</strong></div>
             <div><span>03</span><strong data-i18n="projectCategoryNewbuilding">Newbuilding</strong></div>
@@ -59,8 +60,8 @@
 
       <section class="project-cta-section section">
         <div class="shell project-cta">
-          <div><p class="section-kicker">SMH Marine</p><h2 data-i18n="projectsCtaTitle">Discuss a similar scope.</h2></div>
-          <div><p data-i18n="projectsCtaCopy">Share the vessel, location and required attendance date. SMH Marine will prepare the right technical response.</p><a class="button button-primary" href="index.html#contact" data-i18n="projectsCtaButton">Prepare an enquiry</a></div>
+          <div><p class="section-kicker">SMH Marine</p><h2 data-i18n="projectsCtaTitle">Discuss your next project.</h2></div>
+          <div><p data-i18n="projectsCtaCopy">Share the vessel, location and required attendance date. SMH Marine will prepare the right technical response.</p><a class="button button-primary" href="index.html#enquiry" data-i18n="projectsCtaButton">Prepare an enquiry</a></div>
         </div>
       </section>
     </main>
@@ -68,7 +69,7 @@
     <footer class="site-footer">
       <div class="shell footer-grid">
         <div class="footer-brand">
-          <img src="assets/smh-marine-logo-cropped.png" alt="SMH Marine" />
+          <img src="assets/smh-marine-logo-cropped.png" alt="SMH Marine" width="1138" height="922" />
           <p data-i18n="footerStatement">Marine consultancy, ship repair and engineering support across a trusted global network.</p>
         </div>
         <div>

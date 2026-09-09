@@ -1,5 +1,7 @@
 const copy = {
   en: {
+    pauseWeather: 'Pause weather ticker', resumeWeather: 'Resume weather ticker',
+    skipToContent: 'Skip to content', openMenu: 'Open menu', closeMenu: 'Close menu', homeLabel: 'SMH Marine home', primaryNavigation: 'Main navigation', weatherRegionLabel: 'Weather across our service network', contactChannelsLabel: 'Contact options', mapRegionsLabel: 'Filter service regions', networkMapLabel: 'Service network world map', globalNetworkLabel: 'Global service network', companyHighlightsLabel: 'SMH Marine at a glance', chinaHighlightsLabel: 'Our team in China', ownerControlsLabel: 'Owner protection services', projectCategoriesLabel: 'Project categories', briefPreview: 'Your enquiry brief — copy this text', requiredField: 'Please enter the requested information.',
     navCompany: 'Company', navServices: 'Services', navProjects: 'Projects', navNetwork: 'Global network', navContact: 'Contact',
     weatherLoading: 'Loading live conditions…', weatherUnavailable: 'Live weather is temporarily unavailable.', weatherCached: 'Last available data', weatherClear: 'Clear', weatherPartlyCloudy: 'Partly cloudy', weatherOvercast: 'Overcast', weatherFog: 'Fog', weatherDrizzle: 'Drizzle', weatherRain: 'Rain', weatherShowers: 'Showers', weatherSnow: 'Snow', weatherThunder: 'Thunderstorm', weatherUnknown: 'Weather', weatherSource: 'Weather data: Open-Meteo',
     heroEyebrow: 'Headquartered in China · Global marine technical services', heroTitle: 'Engineering certainty.', heroTitleOutline: 'Wherever your vessel needs it.',
@@ -25,7 +27,7 @@ const copy = {
     networkKicker: 'Global service network', networkTitle: 'Local reach. International capability.', networkCopy: 'Service coordination, technical contacts and shipyard relationships across six operating regions.', mapDefaultLabel: 'Select a network point', mapDefaultTitle: 'Global coverage', mapDefaultCopy: '24 technical and shipyard-network locations', mapNote: 'Markers represent service coordination and partner-network coverage, not company offices. Dense port clusters are slightly separated for readability.', heroMapLabel: 'Global service network', heroMapPoints: 'network points', heroMapHover: 'Hover over a point',
     processKicker: 'How we work', processTitle: 'Clear control from first call to final report.', process1Title: 'Define the scope', process1Copy: 'Vessel condition, port, schedule and technical priorities are established.', process2Title: 'Mobilize expertise', process2Copy: 'The right engineers, repair team and shipyard resources are coordinated.', process3Title: 'Execute & control', process3Copy: 'Progress, quality, safety and critical findings remain visible throughout the work.', process4Title: 'Close with evidence', process4Copy: 'Completion status and technical records are handed over clearly.',
     urgentLabel: '24/7 urgent technical attendance', urgentTitle: 'Send the essential technical details for immediate support.', urgentCopy: 'SMH Marine coordinates time-critical attendance, troubleshooting and repair support across its service network.', urgentButton: '24/7 urgent attendance', contactKicker: 'Technical enquiry', contactTitle: 'Tell us what the vessel needs.', contactCopy: 'For urgent attendance or a planned project, contact Evrim Biçer directly by phone, email, WhatsApp or WeChat. The China office details are provided below.', channelPhone: 'Phone', channelEmail: 'Email', channelAddress: 'Shanghai office', channelOfficeAddress: 'Room 1305, No. 1500 Century Avenue, Shanghai, China', officeMapTitle: 'SMH Marine Shanghai office location', mapOpenOsm: 'OpenStreetMap', mapOpenAmap: 'Open in AMap', formKicker: 'Technical request builder', formTitle: 'Prepare the information needed for a fast response.', fieldVessel: 'Vessel / project', fieldImo: 'IMO number', fieldVesselType: 'Vessel type', fieldLocation: 'Port / shipyard', fieldDate: 'Required attendance', fieldService: 'Service category', fieldContact: 'Company / contact person', fieldContactRoute: 'Email / phone / WeChat', fieldScope: 'Technical scope', fieldAttachments: 'Photos, reports or specifications', attachmentsNote: 'Files remain on your device. Add them when sending the copied brief through the approved contact channel.', serviceOptionUrgent: 'Urgent technical attendance', serviceOptionChinaUrgent: 'Emergency repair in China', serviceOptionRepair: 'Ship repair & dry-docking', serviceOptionEngine: 'Engine & crankshaft works', serviceOptionRetrofit: 'Retrofit & energy efficiency', serviceOptionOwner: 'Owner representation', serviceOptionNewbuilding: 'Newbuilding supervision', serviceOptionInspection: 'Inspection / survey', copyBrief: 'Prepare & copy brief', downloadBrief: 'Download as TXT', copied: 'Enquiry brief copied.', downloaded: 'Enquiry brief downloaded.', copyFailed: 'Copy failed. Select and copy the generated text.',
-    projectsKicker: 'Project portfolio', projectsTitle: 'Proven work. Documented properly.', projectsIntro: 'Approved photographs and concise technical records from completed ship repair, dry-docking, newbuilding and inspection projects will be presented here.', projectsStatusLabel: 'Portfolio status', projectsStatusTitle: 'Approved project material pending', projectsStatusCopy: 'The project page is ready. Real project photography, vessel-safe descriptions and confirmed scope details will be added after review.', projectCategoryRepair: 'Major repair', projectCategoryDocking: 'Dry-docking & steel', projectCategoryNewbuilding: 'Newbuilding', projectCategorySurvey: 'Survey & inspection', projectsCtaTitle: 'Discuss a similar scope.', projectsCtaCopy: 'Share the vessel, location and required attendance date. SMH Marine will prepare the right technical response.', projectsCtaButton: 'Prepare an enquiry',
+    projectsKicker: 'Project portfolio', projectsTitle: 'Project experience', projectsIntro: 'Explore our areas of project experience in ship repair, dry-docking, newbuilding and inspection.', projectsStatusLabel: 'Portfolio status', projectsStatusTitle: 'Project portfolio coming soon', projectsStatusCopy: 'Project photographs and technical case studies are being prepared. Contact us to discuss experience relevant to your vessel.', projectCategoryRepair: 'Major repair', projectCategoryDocking: 'Dry-docking & steel', projectCategoryNewbuilding: 'Newbuilding', projectCategorySurvey: 'Survey & inspection', projectsCtaTitle: 'Discuss your next project.', projectsCtaCopy: 'Share the vessel, location and required attendance date. SMH Marine will prepare the right technical response.', projectsCtaButton: 'Prepare an enquiry',
     detailKicker: 'Specialist marine service', detailScopeLabel: 'Included support', detailBack: 'Back to all capabilities', detailOwnerKicker: 'Owner-side control', detailCtaTitle: 'Prepare the vessel scope.', detailCtaCopy: 'Share the vessel, location, timing and available technical records for a focused response.', detailCtaButton: 'Build a technical enquiry',
     repairPageTitle: 'Ship Repair & Dry-Docking | SMH Marine', repairPageDescription: 'Owner-side ship repair and dry-docking planning, supervision and commercial control by SMH Marine.', repairTitle: 'Ship Repair & Dry-Docking', repairIntro: 'Owner-side planning and site control for safe, commercially disciplined repair periods.', repairPromise: 'Control the repair before it controls the budget.', repairCopy: 'SMH Marine develops a clear scope, compares yard proposals, supervises execution and verifies completion so technical decisions and commercial commitments remain aligned.', repair1: 'Repair specification development and work-list review', repair2: 'Shipyard comparison, tender clarification and price negotiation', repair3: 'Docking planning, steel renewal and heavy repair coordination', repair4: 'Daily progress, quality, safety and schedule follow-up', repair5: 'Variation and extra-work review before approval', repair6: 'Completion, invoice and close-out documentation control', repair7: 'Electrical, HVAC, refrigeration, crane and deck-machinery repair coordination',
     enginePageTitle: 'Main Engine & Crankshaft Works | SMH Marine', enginePageDescription: 'Main engine, auxiliary engine and crankshaft repair coordination and owner-side technical control.', engineTitle: 'Main Engine & Crankshaft Works', engineIntro: 'Experienced coordination for high-risk machinery repairs, from diagnosis and measurement to trials and close-out.', enginePromise: 'Independent control for the vessel’s most critical machinery.', engineCopy: 'The repair method, measurements, tolerances, specialist resources and acceptance records are coordinated around the owner’s technical priorities and operating schedule.', engine1: 'Two-stroke and four-stroke main-engine and auxiliary-engine repair coordination', engine2: 'Crankshaft inspection, dimensional measurement and condition assessment', engine3: 'Machining, polishing, recovery and specialist repair coordination', engine4: 'Maker, workshop, class and shipyard interface management', engine5: 'Alignment, assembly and quality-control follow-up', engine6: 'Testing, sea-trial support and final technical records',
@@ -38,11 +40,13 @@ const copy = {
     regionAll: 'All locations', regionTurkiye: 'Türkiye', regionEuropeAfrica: 'Europe & Africa', regionMiddleEast: 'Middle East', regionAmericas: 'Americas', regionChina: 'China', regionAsiaPacific: 'Asia Pacific', pageTitle: 'SMH Marine | China-Based Global Marine Engineering', pageDescription: 'China-headquartered SMH Marine provides ship repair, marine engineering, consultancy and global technical support for shipowners.', projectsPageTitle: 'Projects | SMH Marine', projectsPageDescription: 'SMH Marine project portfolio for ship repair, dry-docking, newbuilding and marine inspection work.'
   },
   tr: {
+    pauseWeather: 'Hava durumu akışını duraklat', resumeWeather: 'Hava durumu akışını devam ettir',
+    skipToContent: 'İçeriğe geç', openMenu: 'Menüyü aç', closeMenu: 'Menüyü kapat', homeLabel: 'SMH Marine ana sayfa', primaryNavigation: 'Ana menü', weatherRegionLabel: 'Hizmet ağımızdaki hava durumu', contactChannelsLabel: 'İletişim seçenekleri', mapRegionsLabel: 'Hizmet bölgelerini filtrele', networkMapLabel: 'Dünya haritasında hizmet ağımız', globalNetworkLabel: 'Küresel hizmet ağı', companyHighlightsLabel: 'Rakamlarla SMH Marine', chinaHighlightsLabel: 'Çin’deki ekibimiz', ownerControlsLabel: 'Armatörün haklarını koruma hizmetleri', projectCategoriesLabel: 'Proje kategorileri', briefPreview: 'Talep özetiniz — bu metni kopyalayın', requiredField: 'Lütfen istenen bilgiyi girin.',
     navCompany: 'Kurumsal', navServices: 'Hizmetler', navProjects: 'Projeler', navNetwork: 'Küresel ağ', navContact: 'İletişim',
     weatherLoading: 'Canlı hava durumu yükleniyor…', weatherUnavailable: 'Canlı hava durumu geçici olarak alınamıyor.', weatherCached: 'Son alınan veri', weatherClear: 'Açık', weatherPartlyCloudy: 'Parçalı bulutlu', weatherOvercast: 'Kapalı', weatherFog: 'Sisli', weatherDrizzle: 'Çisenti', weatherRain: 'Yağmurlu', weatherShowers: 'Sağanak', weatherSnow: 'Karlı', weatherThunder: 'Gök gürültülü', weatherUnknown: 'Hava durumu', weatherSource: 'Hava verisi: Open-Meteo',
     heroEyebrow: 'Çin merkezli · Küresel denizcilik ve teknik hizmetler', heroTitle: 'Mühendislikte güven.', heroTitleOutline: 'Geminiz nerede olursa olsun.',
     heroCopy: 'Merkezi Çin’de bulunan SMH Marine, tersane projelerinde armatörün teknik ve ticari haklarını korur; ağır onarımdan yeni inşa desteğine kadar kapsamı, maliyeti ve teslim sürecini kontrol eder.',
-    heroCta: 'Armatörün haklarını nasıl koruduğumuzu görün', heroNetwork: 'Küresel ağı görüntüleyin', factYears: 'Yıllık denizcilik deneyimi', factLocations: 'Hizmet ağı noktası', factCoordination: 'Koordine edilen proje', factChinaWord: 'ÇİN', factChina: 'Merkez ve en güçlü tersane ağı',
+    heroCta: 'Armatörün haklarını nasıl koruduğumuzu görün', heroNetwork: 'Küresel ağı görüntüleyin', factYears: 'Yıllık denizcilik deneyimi', factLocations: 'Hizmet ağı noktası', factCoordination: 'Teknik koordinasyon', factChinaWord: 'ÇİN', factChina: 'Merkez ve en güçlü tersane ağı',
     chinaKicker: 'Çin merkezli saha gücü', chinaTitle: 'Çin bizim için yalnızca bir hizmet noktası değil, ana merkezimiz.', chinaIntro: 'Merkezi Çin’de bulunan SMH Marine, büyük Çin tersanelerine doğrudan erişimini armatör adına yürüttüğü mühendislik denetimi ve uluslararası proje standartlarıyla birleştirir.', chinaCopy: 'Çin’de yerleşik 20’den fazla deneyimli uzmandan oluşan ekibimiz, Çin tersanelerindeki güçlü saha bilgisini armatör adına yürüttüğü teknik ve ticari denetimle birleştirir.', chinaMetricTeam: 'Çin’de yerleşik deneyimli yerel uzman', chinaMetricYears: 'yıllık Çin tersanesi deneyimi', chinaMetricProjects: 'koordine edilen onarım ve yeni inşa projesi', chinaMetricRegions: 'stratejik Çin tersane bölgesi', chinaExpertiseTitle: 'Ticari hazırlık ve sörvey uzmanlığı', chinaExpertise1: 'Yeni inşa sözleşme kapsamının hazırlanması, teknik inceleme ve fiyatlandırma desteği', chinaExpertise2: 'Gemi onarım planlaması, tersane tekliflerinin değerlendirilmesi ve özel sörvey hazırlığı', chinaExpertise3: 'Çin ve Avrupa’da satın alma öncesi gemi incelemeleri için yerel uzman desteği', chinaExpertise4: 'Havuz öncesi gemi incelemesi ve onarım şartnamesi hazırlığı', chinaExpertise5: 'Çin genelinde acil onarım ekibi ve uzman desteği', chinaCities: 'Şanghay · Dalian · Nantong · Zhoushan · Tianjin',
     chinaRegionsKicker: 'Beş stratejik tersane bölgesi', chinaRegionsTitle: 'Çin’deki operasyonların yürütüldüğü noktalarda yerel katılım.', chinaShanghai: 'Yangtze Deltası’nda armatör temsilciliği, gemi onarımı, teknik kontrol ve yeni inşa takibi.', chinaDalian: 'Kuzeydoğu Çin’de onarım ve yeni inşa projeleri için yerel ekip ve koordinasyon desteği.', chinaNantong: 'Yangtze Nehri tersanelerinde uzman saha desteği, onarım planlaması ve proje takibi.', chinaZhoushan: 'Yerel tersane ağı genelinde gemi onarımı, havuzlama ve havuz öncesi hazırlık koordinasyonu.', chinaTianjin: 'Kuzey Çin’de yerinde teknik destek ve tersane koordinasyonu.', chinaUrgentKicker: 'Çin’de acil onarım', chinaUrgentTitle: 'Acil arızalar için Çin genelinde yerel ekip ve uzman desteği.', chinaUrgentCopy: 'Çin merkezli ekibimiz; arıza tespitinden onarım koordinasyonuna ve testlere kadar gereken teknik müdahaleyi limanda, demir sahasında veya tersanede sağlar.', chinaUrgent1: 'Elektrik arızalarının tespiti ve onarım koordinasyonu', chinaUrgent2: 'Klima, HVAC, soğutma, soğuk oda ve dondurucu onarımları', chinaUrgent3: 'Güverte ve yük vinçlerinde arıza tespiti ve onarım', chinaUrgent4: 'İki zamanlı ve dört zamanlı dizel motor onarımları', chinaUrgent5: 'Demir ırgatı, bağlama vinci ve diğer güverte makinelerinin onarımı', chinaUrgent6: 'Gemiye katılan onarım ekipleriyle yüzer halde ve sefer sırasında onarım organizasyonu',
     ownerKicker: 'Armatör adına teknik ve ticari kontrol', ownerTitle: 'Her tersane projesinde armatörün haklarını ve bütçesini koruyoruz.', ownerCopy: 'Tersane tekliflerini ayrıntılı inceler, iş kapsamı ve fiyatları müzakere eder, değişiklikleri ve ilave işleri kontrol eder, ilerlemeyi ve faturaları doğrularız. Hedefimiz; emniyet, kalite ve teslim süresinden ödün vermeden armatörün teknik ve ticari haklarını korumaktır.', ownerControl1: 'İş kapsamı kontrolü', ownerControl2: 'Fiyat karşılaştırması ve müzakere', ownerControl3: 'Değişiklik ve ilave iş kontrolü', ownerControl4: 'İlerleme ve fatura doğrulama',
@@ -63,7 +67,7 @@ const copy = {
     networkKicker: 'Küresel hizmet ağı', networkTitle: 'Yerel erişim. Uluslararası kabiliyet.', networkCopy: 'Altı faaliyet bölgesinde yerel uzman desteği, teknik hizmet koordinasyonu ve güçlü tersane bağlantıları.', mapDefaultLabel: 'Bir hizmet noktası seçin', mapDefaultTitle: 'Küresel hizmet ağı', mapDefaultCopy: '24 teknik hizmet ve tersane ağı noktası', mapNote: 'Haritadaki işaretler şirket ofislerini değil, hizmet verebildiğimiz ve iş ortaklarımızla koordinasyon sağladığımız bölgeleri gösterir. Birbirine yakın limanlar, haritada daha rahat seçilebilmesi için çok az ayrıştırılmıştır.', heroMapLabel: 'Küresel hizmet ağı', heroMapPoints: 'hizmet noktası', heroMapHover: 'Ayrıntıları görmek için işaretin üzerine gelin',
     processKicker: 'Çalışma modelimiz', processTitle: 'İlk görüşmeden son rapora kadar açık ve izlenebilir kontrol.', process1Title: 'İş kapsamını belirleme', process1Copy: 'Geminin durumu, bulunduğu liman, çalışma programı ve teknik öncelikleri netleştirilir.', process2Title: 'Uygun ekibi görevlendirme', process2Copy: 'İhtiyaca uygun mühendisler, onarım ekibi ve tersane kaynakları koordine edilir.', process3Title: 'Uygulama ve kontrol', process3Copy: 'İlerleme, kalite, emniyet ve kritik bulgular proje boyunca izlenir ve raporlanır.', process4Title: 'Kayıtlarla teslim ve kapanış', process4Copy: 'Tamamlanan işler, test sonuçları ve teknik kayıtlar açık biçimde armatöre teslim edilir.',
     urgentLabel: '7/24 acil teknik müdahale', urgentTitle: 'Acil teknik destek talebinizi gerekli bilgilerle birlikte hemen iletin.', urgentCopy: 'SMH Marine, hizmet ağı genelinde acil saha müdahalesi, arıza tespiti ve onarım desteğini koordine eder.', urgentButton: '7/24 acil müdahale', contactKicker: 'Teknik talep', contactTitle: 'Geminin ihtiyacını bize anlatın.', contactCopy: 'Acil müdahale veya planlı bir proje için Evrim Biçer’e telefon, e-posta, WhatsApp ya da WeChat üzerinden doğrudan ulaşın. Çin ofisinin iletişim ve adres bilgileri aşağıdadır.', channelPhone: 'Telefon', channelEmail: 'E-posta', channelAddress: 'Şanghay ofisi', channelOfficeAddress: 'Oda 1305, No. 1500 Century Avenue, Şanghay, Çin', officeMapTitle: 'SMH Marine Şanghay ofisi konumu', mapOpenOsm: 'OpenStreetMap’te aç', mapOpenAmap: 'AMap’te aç', formKicker: 'Teknik talep formu', formTitle: 'Hızlı yanıt alabilmek için gerekli bilgileri hazırlayın.', fieldVessel: 'Gemi adı / proje', fieldImo: 'IMO numarası', fieldVesselType: 'Gemi tipi', fieldLocation: 'Liman / tersane', fieldDate: 'Talep edilen hizmet tarihi', fieldService: 'Hizmet kategorisi', fieldContact: 'Şirket / yetkili kişi', fieldContactRoute: 'E-posta / telefon / WeChat', fieldScope: 'Teknik iş kapsamı', fieldAttachments: 'Fotoğraf, rapor veya şartnameler', attachmentsNote: 'Seçtiğiniz dosyalar cihazınızda kalır. Talep özetini e-posta, WhatsApp veya WeChat üzerinden gönderirken bu dosyaları ayrıca ekleyin.', serviceOptionUrgent: 'Acil teknik müdahale', serviceOptionChinaUrgent: 'Çin’de acil onarım', serviceOptionRepair: 'Gemi onarımı ve havuzlama', serviceOptionEngine: 'Makine ve krankşaft işleri', serviceOptionRetrofit: 'Retrofit ve enerji verimliliği', serviceOptionOwner: 'Armatör temsilciliği', serviceOptionNewbuilding: 'Yeni inşa gözetimi', serviceOptionInspection: 'Teknik inceleme / sörvey', copyBrief: 'Talep özetini hazırla ve kopyala', downloadBrief: 'TXT dosyası olarak indir', copied: 'Talep özeti kopyalandı.', downloaded: 'Talep özeti indirildi.', copyFailed: 'Kopyalama başarısız oldu. Oluşturulan metni seçerek kopyalayın.',
-    projectsKicker: 'Proje portföyü', projectsTitle: 'Tamamlanmış işler. Açık teknik kayıtlar.', projectsIntro: 'Tamamlanan gemi onarımı, havuzlama, yeni inşa ve sörvey projelerine ait onaylı fotoğraflar ile kısa teknik bilgiler bu sayfada sunulacaktır.', projectsStatusLabel: 'Portföy durumu', projectsStatusTitle: 'Onaylı proje materyalleri bekleniyor', projectsStatusCopy: 'Proje sayfası hazırdır. Gerçek proje fotoğrafları, gemi ve müşteri bilgileri korunarak hazırlanan açıklamalar ve doğrulanmış iş kapsamları inceleme sonrasında eklenecektir.', projectCategoryRepair: 'Ağır onarım', projectCategoryDocking: 'Havuzlama ve sac işleri', projectCategoryNewbuilding: 'Yeni inşa', projectCategorySurvey: 'Sörvey ve teknik inceleme', projectsCtaTitle: 'Benzer bir projeyi görüşelim.', projectsCtaCopy: 'Geminin adını, bulunduğu yeri ve talep edilen hizmet tarihini paylaşın; SMH Marine ihtiyaca uygun teknik müdahale planını hazırlasın.', projectsCtaButton: 'Teknik talep hazırlayın',
+    projectsKicker: 'Proje portföyü', projectsTitle: 'Proje deneyimimiz', projectsIntro: 'Gemi onarımı, havuzlama, yeni inşa ve teknik inceleme alanlarındaki proje deneyimimizi keşfedin.', projectsStatusLabel: 'Portföy durumu', projectsStatusTitle: 'Proje portföyümüz yakında burada', projectsStatusCopy: 'Proje fotoğrafları ve teknik örnekler hazırlanıyor. Geminizin ihtiyaçlarına uygun deneyimimizi görüşmek için bizimle iletişime geçin.', projectCategoryRepair: 'Ağır onarım', projectCategoryDocking: 'Havuzlama ve sac işleri', projectCategoryNewbuilding: 'Yeni inşa', projectCategorySurvey: 'Sörvey ve teknik inceleme', projectsCtaTitle: 'Yeni projenizi görüşelim.', projectsCtaCopy: 'Geminin adını, bulunduğu yeri ve talep edilen hizmet tarihini paylaşın; SMH Marine ihtiyaca uygun teknik müdahale planını hazırlasın.', projectsCtaButton: 'Teknik talep hazırlayın',
     detailKicker: 'Uzman denizcilik hizmeti', detailScopeLabel: 'Hizmet kapsamı', detailBack: 'Tüm hizmetlere dön', detailOwnerKicker: 'Armatör adına kontrol', detailCtaTitle: 'Geminin teknik iş kapsamını paylaşın.', detailCtaCopy: 'Hızlı ve doğru bir değerlendirme için gemi bilgilerini, konumu, ihtiyaç tarihini ve mevcut teknik kayıtları iletin.', detailCtaButton: 'Teknik talep oluşturun',
     repairPageTitle: 'Gemi Onarımı ve Havuzlama | SMH Marine', repairPageDescription: 'SMH Marine tarafından armatör adına yürütülen gemi onarımı ve havuzlama planlaması, saha gözetimi ve ticari kontrol.', repairTitle: 'Gemi Onarımı ve Havuzlama', repairIntro: 'Emniyetli ve mali açıdan kontrollü bir onarım dönemi için armatör adına planlama, saha gözetimi ve tersane koordinasyonu.', repairPromise: 'Onarım kapsamını, maliyeti ve teslim süresini baştan kontrol altına alın.', repairCopy: 'SMH Marine; teknik kararlarla ticari taahhütlerin uyumlu kalması için iş kapsamını netleştirir, tersane tekliflerini karşılaştırır, uygulamayı denetler ve tamamlanan işleri doğrular.', repair1: 'Onarım şartnamesinin hazırlanması ve iş listesinin incelenmesi', repair2: 'Tersanelerin karşılaştırılması, tekliflerin netleştirilmesi ve fiyat müzakeresi', repair3: 'Havuzlama, sac yenileme ve ağır onarım koordinasyonu', repair4: 'Günlük ilerleme, kalite, emniyet ve iş programı takibi', repair5: 'Sözleşme değişiklikleri ve ilave işlerin onaydan önce incelenmesi', repair6: 'Tamamlanan işlerin, faturaların ve proje kapanış belgelerinin kontrolü', repair7: 'Elektrik, HVAC, soğutma, vinç ve güverte makineleri onarım koordinasyonu',
     enginePageTitle: 'Ana Makine ve Krankşaft İşleri | SMH Marine', enginePageDescription: 'Ana makine, yardımcı makine ve krankşaft onarımlarında koordinasyon ve armatör adına bağımsız teknik kontrol.', engineTitle: 'Ana Makine ve Krankşaft İşleri', engineIntro: 'Arıza tespiti ve ölçümden testlere ve teknik kapanışa kadar yüksek riskli makine onarımlarında deneyimli koordinasyon.', enginePromise: 'Geminin en kritik makineleri için armatör adına bağımsız teknik kontrol.', engineCopy: 'Onarım yöntemi, ölçümler, toleranslar, uzman ekipler ve kabul kayıtları; armatörün teknik öncelikleri ve geminin operasyon programı doğrultusunda koordine edilir.', engine1: 'İki zamanlı ve dört zamanlı ana makineler ile yardımcı makinelerin onarım koordinasyonu', engine2: 'Krankşaft kontrolü, boyutsal ölçüm ve teknik durum değerlendirmesi', engine3: 'Talaşlı işleme, polisaj ve krankşaft kurtarma onarımlarının koordinasyonu', engine4: 'Üretici, atölye, klas kuruluşu ve tersane arasındaki teknik koordinasyon', engine5: 'Hizalama, montaj ve kalite kontrol takibi', engine6: 'Testler, deniz tecrübesi desteği ve nihai teknik kayıtların hazırlanması',
@@ -101,7 +105,19 @@ const WEATHER_CACHE_KEY = 'smh-port-weather-v1';
 const WEATHER_REFRESH_MS = 15 * 60 * 1000;
 const WEATHER_CACHE_MAX_AGE = 3 * 60 * 60 * 1000;
 const weatherTicker = document.querySelector('[data-weather-ticker]');
+const weatherToggle = document.querySelector('[data-weather-toggle]');
 let weatherSnapshot = null;
+let weatherRequestInFlight = false;
+let weatherStale = false;
+
+weatherToggle?.addEventListener('click', () => {
+  const paused = weatherToggle.getAttribute('aria-pressed') !== 'true';
+  weatherToggle.setAttribute('aria-pressed', String(paused));
+  weatherToggle.closest('.weather-strip')?.classList.toggle('is-paused', paused);
+  weatherToggle.dataset.i18nAriaLabel = paused ? 'resumeWeather' : 'pauseWeather';
+  weatherToggle.setAttribute('aria-label', copy[state.language][weatherToggle.dataset.i18nAriaLabel]);
+  weatherToggle.textContent = paused ? '▶' : '⏸';
+});
 
 function weatherVisual(code, isDay) {
   if (code === 0) return { icon: isDay ? '☀️' : '🌙', key: 'weatherClear' };
@@ -117,11 +133,16 @@ function weatherVisual(code, isDay) {
 }
 
 function roundedWeatherValue(value) {
-  return Number.isFinite(Number(value)) ? Math.round(Number(value)) : null;
+  return typeof value === 'number' && Number.isFinite(value) ? Math.round(value) : null;
 }
 
 function renderWeather(snapshot, stale = false) {
   if (!weatherTicker || !snapshot?.items?.length) return;
+  if (Date.now() - snapshot.timestamp > WEATHER_CACHE_MAX_AGE) {
+    weatherSnapshot = null;
+    weatherTicker.innerHTML = `<span class="weather-error">${copy[state.language].weatherUnavailable}</span>`;
+    return;
+  }
   const dictionary = copy[state.language];
   const items = snapshot.items.map((item, index) => {
     const location = locations[index];
@@ -143,8 +164,9 @@ function renderWeather(snapshot, stale = false) {
 function readWeatherCache() {
   try {
     const cached = JSON.parse(localStorage.getItem(WEATHER_CACHE_KEY));
-    if (!cached?.timestamp || !Array.isArray(cached.items) || cached.items.length !== locations.length) return null;
-    if (Date.now() - cached.timestamp > WEATHER_CACHE_MAX_AGE) return null;
+    if (!Number.isFinite(cached?.timestamp) || !Array.isArray(cached.items) || cached.items.length !== locations.length) return null;
+    if (cached.items.some((item) => !item || !Number.isFinite(item.temperature) || !Number.isFinite(item.code))) return null;
+    if (Date.now() < cached.timestamp || Date.now() - cached.timestamp > WEATHER_CACHE_MAX_AGE) return null;
     return cached;
   } catch {
     return null;
@@ -156,7 +178,10 @@ function writeWeatherCache(snapshot) {
 }
 
 async function fetchWeather() {
-  if (!weatherTicker) return;
+  if (!weatherTicker || weatherRequestInFlight) return;
+  weatherRequestInFlight = true;
+  const controller = new AbortController();
+  const timeout = window.setTimeout(() => controller.abort(), 12000);
   const latitudes = locations.map((location) => location.lat).join(',');
   const longitudes = locations.map((location) => location.lon).join(',');
   const params = new URLSearchParams({
@@ -169,11 +194,12 @@ async function fetchWeather() {
   });
 
   try {
-    const response = await fetch(`https://api.open-meteo.com/v1/forecast?${params}`, { cache: 'no-store' });
+    const response = await fetch(`https://api.open-meteo.com/v1/forecast?${params}`, { cache: 'no-store', signal: controller.signal });
     if (!response.ok) throw new Error(`Weather request failed: ${response.status}`);
     const payload = await response.json();
     const entries = Array.isArray(payload) ? payload : [payload];
     if (entries.length !== locations.length) throw new Error('Weather response location count mismatch');
+    if (entries.some((entry) => !Number.isFinite(entry?.current?.temperature_2m) || !Number.isFinite(entry?.current?.weather_code))) throw new Error('Weather response is incomplete');
     weatherSnapshot = {
       timestamp: Date.now(),
       items: entries.map((entry) => ({
@@ -185,11 +211,16 @@ async function fetchWeather() {
         rain: entry.daily?.precipitation_probability_max?.[0]
       }))
     };
+    weatherStale = false;
     writeWeatherCache(weatherSnapshot);
     renderWeather(weatherSnapshot);
   } catch {
+    weatherStale = true;
     if (weatherSnapshot) renderWeather(weatherSnapshot, true);
     else weatherTicker.innerHTML = `<span class="weather-error">${copy[state.language].weatherUnavailable}</span>`;
+  } finally {
+    window.clearTimeout(timeout);
+    weatherRequestInFlight = false;
   }
 }
 
@@ -204,11 +235,12 @@ function initializeWeather() {
   const firstRefreshDelay = cached && cacheAge < WEATHER_REFRESH_MS ? WEATHER_REFRESH_MS - cacheAge : 0;
   window.setTimeout(() => {
     fetchWeather();
-    window.setInterval(fetchWeather, WEATHER_REFRESH_MS);
+    window.setInterval(() => { if (document.visibilityState !== 'hidden') fetchWeather(); }, WEATHER_REFRESH_MS);
   }, firstRefreshDelay);
   document.addEventListener('visibilitychange', () => {
     if (document.visibilityState === 'visible' && (!weatherSnapshot || Date.now() - weatherSnapshot.timestamp >= WEATHER_REFRESH_MS)) fetchWeather();
   });
+  window.addEventListener('online', fetchWeather);
 }
 
 function getInitialLanguage() {
@@ -253,7 +285,12 @@ function markerTemplate(location, index, className = '') {
   const left = ((location.lon + 180) / 360) * 100;
   const top = ((90 - location.lat) / 180) * 100;
   const [offsetX, offsetY] = markerOffsets[location.name.en] || [0, 0];
-  return `<button class="map-marker${className}" type="button" style="left:${left.toFixed(3)}%;top:${top.toFixed(3)}%;--offset-x:${offsetX}px;--offset-y:${offsetY}px" data-location="${index}" aria-label="${location.name[state.language]}, ${getRegionLabel(location.region)}"></button>`;
+  const inactive = className.includes('is-dimmed') ? ' disabled aria-hidden="true"' : '';
+  return `<button class="map-marker${className}" type="button" style="left:${left.toFixed(3)}%;top:${top.toFixed(3)}%;--offset-x:${offsetX}px;--offset-y:${offsetY}px" data-location="${index}" aria-pressed="false" aria-label="${location.name[state.language]}, ${getRegionLabel(location.region)}"${inactive}></button>`;
+}
+
+function resetHeroMapDetail() {
+  if (heroMapDetail) heroMapDetail.innerHTML = `<small>${copy[state.language].heroMapHover}</small><strong>${copy[state.language].mapDefaultTitle}</strong>`;
 }
 
 function bindMarkerDetails(root, detailTarget, resetOnLeave = false) {
@@ -261,8 +298,19 @@ function bindMarkerDetails(root, detailTarget, resetOnLeave = false) {
   root.querySelectorAll('[data-location]').forEach((button) => {
     const location = locations[Number(button.dataset.location)];
     const show = () => {
-      root.querySelectorAll('.map-marker').forEach((marker) => marker.classList.remove('is-active'));
+      root.querySelectorAll('.map-marker').forEach((marker) => {
+        marker.classList.remove('is-active');
+        marker.setAttribute('aria-pressed', 'false');
+      });
       button.classList.add('is-active');
+      button.setAttribute('aria-pressed', 'true');
+      if (root === markersRoot) {
+        locationIndex?.querySelectorAll('[data-select-location]').forEach((choice) => {
+          const active = choice.dataset.selectLocation === button.dataset.location;
+          choice.classList.toggle('is-active', active);
+          choice.setAttribute('aria-pressed', String(active));
+        });
+      }
       detailTarget.innerHTML = `<span>${getRegionLabel(location.region)}</span><strong>${location.name[state.language]}</strong><small>${copy[state.language].mapSupport}</small>`;
     };
     button.addEventListener('mouseenter', show);
@@ -271,25 +319,45 @@ function bindMarkerDetails(root, detailTarget, resetOnLeave = false) {
   });
   if (resetOnLeave) {
     root.onmouseleave = () => {
-      root.querySelectorAll('.map-marker').forEach((marker) => marker.classList.remove('is-active'));
-      detailTarget.innerHTML = `<small>${copy[state.language].heroMapHover}</small><strong>${copy[state.language].mapDefaultTitle}</strong>`;
+      if (root.contains(document.activeElement)) return;
+      root.querySelectorAll('.map-marker').forEach((marker) => {
+        marker.classList.remove('is-active');
+        marker.setAttribute('aria-pressed', 'false');
+      });
+      resetHeroMapDetail();
     };
   }
 }
 
 function renderNetwork() {
   if (!filtersRoot || !markersRoot || !locationIndex) return;
-  filtersRoot.innerHTML = regions.map((region) => `<button class="map-filter${state.region === region.id ? ' is-active' : ''}" type="button" data-region="${region.id}">${copy[state.language][region.key]}</button>`).join('');
+  filtersRoot.innerHTML = regions.map((region) => `<button class="map-filter${state.region === region.id ? ' is-active' : ''}" type="button" data-region="${region.id}" aria-pressed="${state.region === region.id}">${copy[state.language][region.key]}</button>`).join('');
   markersRoot.innerHTML = locations.map((location, index) => markerTemplate(location, index, state.region !== 'all' && state.region !== location.region ? ' is-dimmed' : '')).join('');
   locationIndex.innerHTML = regions.slice(1).map((region) => {
-    const names = locations.filter((location) => location.region === region.id).map((location) => location.name[state.language]).join(' · ');
-    return `<div class="location-group"><strong>${copy[state.language][region.key]}</strong><p>${names}</p></div>`;
+    const choices = locations.map((location, index) => location.region === region.id ? `<button class="location-select" type="button" data-select-location="${index}" aria-pressed="false">${location.name[state.language]}</button>` : '').join('');
+    return `<div class="location-group"><strong>${copy[state.language][region.key]}</strong><div class="location-choices">${choices}</div></div>`;
   }).join('');
-  filtersRoot.querySelectorAll('[data-region]').forEach((button) => button.addEventListener('click', () => { state.region = button.dataset.region; renderNetwork(); setMapDetail(null); }));
+  filtersRoot.querySelectorAll('[data-region]').forEach((button) => button.addEventListener('click', () => {
+    state.region = button.dataset.region;
+    renderNetwork();
+    setMapDetail(null);
+    filtersRoot.querySelector(`[data-region="${state.region}"]`)?.focus({ preventScroll: true });
+  }));
   bindMarkerDetails(markersRoot, mapDetail);
+  locationIndex.querySelectorAll('[data-select-location]').forEach((button) => button.addEventListener('click', () => {
+    const index = button.dataset.selectLocation;
+    if (state.region !== 'all' && state.region !== locations[Number(index)].region) {
+      state.region = locations[Number(index)].region;
+      renderNetwork();
+      locationIndex.querySelector(`[data-select-location="${index}"]`)?.focus({ preventScroll: true });
+    }
+    markersRoot.querySelector(`[data-location="${index}"]`)?.click();
+    mapDetail?.scrollIntoView({ block: 'center', behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+  }));
   if (heroMarkersRoot && heroMapDetail) {
     heroMarkersRoot.innerHTML = locations.map((location, index) => markerTemplate(location, index)).join('');
     bindMarkerDetails(heroMarkersRoot, heroMapDetail, true);
+    resetHeroMapDetail();
   }
 }
 
@@ -303,6 +371,8 @@ function translate() {
   document.querySelector('meta[name="description"]')?.setAttribute('content', dictionary[descriptionKey] || dictionary.pageDescription);
   document.querySelectorAll('[data-i18n]').forEach((element) => { if (dictionary[element.dataset.i18n]) element.textContent = dictionary[element.dataset.i18n]; });
   document.querySelectorAll('[data-i18n-title]').forEach((element) => { if (dictionary[element.dataset.i18nTitle]) element.setAttribute('title', dictionary[element.dataset.i18nTitle]); });
+  document.querySelectorAll('[data-i18n-aria-label]').forEach((element) => { if (dictionary[element.dataset.i18nAriaLabel]) element.setAttribute('aria-label', dictionary[element.dataset.i18nAriaLabel]); });
+  menuButton?.setAttribute('aria-label', navigation?.classList.contains('is-open') ? dictionary.closeMenu : dictionary.openMenu);
   if (languageButton) {
     languageButton.textContent = state.language === 'en' ? 'Türkçe' : 'English';
     languageButton.setAttribute('aria-label', state.language === 'en' ? 'Türkçeye geç' : 'Switch to English');
@@ -311,30 +381,75 @@ function translate() {
   if (urgentLink) urgentLink.textContent = dictionary.urgentButton;
   renderNetwork();
   setMapDetail(null);
-  if (weatherSnapshot) renderWeather(weatherSnapshot, Date.now() - weatherSnapshot.timestamp >= WEATHER_REFRESH_MS);
+  if (weatherSnapshot) renderWeather(weatherSnapshot, weatherStale || Date.now() - weatherSnapshot.timestamp >= WEATHER_REFRESH_MS);
   else if (weatherTicker?.querySelector('.weather-error')) weatherTicker.innerHTML = `<span class="weather-error">${dictionary.weatherUnavailable}</span>`;
+  const formStatus = enquiryForm?.querySelector('[data-form-status]');
+  if (formStatus?.dataset.statusKey) formStatus.textContent = dictionary[formStatus.dataset.statusKey];
+  const preview = enquiryForm?.querySelector('[data-brief-preview]');
+  if (preview) preview.value = buildEnquiryBrief();
 }
 
 function closeMobileMenu() {
   navigation?.classList.remove('is-open');
   menuButton?.setAttribute('aria-expanded', 'false');
+  menuButton?.setAttribute('aria-label', copy[state.language].openMenu);
 }
 
 if (menuButton && navigation) {
-  menuButton.addEventListener('click', () => { const open = navigation.classList.toggle('is-open'); menuButton.setAttribute('aria-expanded', String(open)); });
+  menuButton.addEventListener('click', () => {
+    const open = navigation.classList.toggle('is-open');
+    menuButton.setAttribute('aria-expanded', String(open));
+    menuButton.setAttribute('aria-label', open ? copy[state.language].closeMenu : copy[state.language].openMenu);
+  });
   navigation.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMobileMenu));
-  document.addEventListener('keydown', (event) => { if (event.key === 'Escape') closeMobileMenu(); });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && navigation.classList.contains('is-open')) {
+      closeMobileMenu();
+      menuButton.focus();
+    }
+  });
+  document.addEventListener('click', (event) => {
+    if (!navigation.contains(event.target) && !menuButton.contains(event.target)) closeMobileMenu();
+  });
 }
 
 languageButton?.addEventListener('click', () => {
+  const menuWasOpen = navigation?.classList.contains('is-open');
   state.language = state.language === 'en' ? 'tr' : 'en';
   try { localStorage.setItem('smh-language', state.language); } catch { /* Language still changes for this visit. */ }
   translate();
   closeMobileMenu();
+  if (menuWasOpen) menuButton?.focus({ preventScroll: true });
 });
 window.addEventListener('scroll', () => header?.classList.toggle('is-scrolled', window.scrollY > 24), { passive: true });
 
 const enquiryForm = document.querySelector('[data-enquiry-form]');
+const serviceSelect = enquiryForm?.querySelector('[name="service"]');
+const requestedService = new URLSearchParams(window.location.search).get('service');
+if (serviceSelect && [...serviceSelect.options].some((option) => option.value === requestedService)) serviceSelect.value = requestedService;
+
+function setFormStatus(key) {
+  const status = enquiryForm?.querySelector('[data-form-status]');
+  if (status) {
+    status.dataset.statusKey = key;
+    status.textContent = copy[state.language][key];
+  }
+}
+
+function validateEnquiry() {
+  if (!enquiryForm) return false;
+  enquiryForm.querySelectorAll('input[required], textarea[required]').forEach((field) => {
+    field.setCustomValidity(field.value.trim() ? '' : copy[state.language].requiredField);
+  });
+  return enquiryForm.reportValidity();
+}
+
+enquiryForm?.addEventListener('input', (event) => {
+  if (event.target.matches('input[required], textarea[required]')) event.target.setCustomValidity('');
+  const status = enquiryForm.querySelector('[data-form-status]');
+  if (status) { status.textContent = ''; delete status.dataset.statusKey; }
+  enquiryForm.querySelector('[data-brief-preview]')?.closest('label')?.remove();
+});
 
 function buildEnquiryBrief() {
   if (!enquiryForm) return '';
@@ -342,37 +457,55 @@ function buildEnquiryBrief() {
   const labels = state.language === 'tr'
     ? ['Gemi / Proje', 'IMO Numarası', 'Gemi Tipi', 'Liman / Tersane', 'Talep Edilen Tarih', 'Hizmet Kategorisi', 'Şirket / Yetkili', 'İletişim', 'Teknik İş Kapsamı', 'Ek Dosyalar']
     : ['Vessel / Project', 'IMO Number', 'Vessel Type', 'Port / Shipyard', 'Required Attendance', 'Service Category', 'Company / Contact', 'Contact Route', 'Technical Scope', 'Attachments'];
-  const serviceKeys = { urgent: 'serviceOptionUrgent', 'china-urgent': 'serviceOptionChinaUrgent', repair: 'serviceOptionRepair', engine: 'serviceOptionEngine', representation: 'serviceOptionOwner', newbuilding: 'serviceOptionNewbuilding', inspection: 'serviceOptionInspection' };
+  const serviceKey = serviceSelect?.selectedOptions[0]?.dataset.i18n;
   const files = data.getAll('attachments').filter((file) => file && file.name).map((file) => file.name).join(', ') || '-';
-  const values = [data.get('vessel'), data.get('imo') || '-', data.get('vesselType') || '-', data.get('location'), data.get('date') || '-', copy[state.language][serviceKeys[data.get('service')]] || '-', data.get('contact') || '-', data.get('contactRoute') || '-', data.get('scope'), files];
+  const fieldValue = (name) => String(data.get(name) || '').trim() || '-';
+  const values = [fieldValue('vessel'), fieldValue('imo'), fieldValue('vesselType'), fieldValue('location'), fieldValue('date'), copy[state.language][serviceKey] || '-', fieldValue('contact'), fieldValue('contactRoute'), fieldValue('scope'), files];
   return `SMH MARINE — ${copy[state.language].contactKicker.toUpperCase()}\n\n${labels.map((label, index) => `${label}: ${values[index]}`).join('\n')}`;
 }
 
 enquiryForm?.addEventListener('submit', async (event) => {
   event.preventDefault();
+  if (!validateEnquiry()) return;
   const brief = buildEnquiryBrief();
-  const status = enquiryForm.querySelector('[data-form-status]');
+  enquiryForm.querySelector('[data-brief-preview]')?.closest('label')?.remove();
   try {
     await navigator.clipboard.writeText(brief);
-    if (status) status.textContent = copy[state.language].copied;
+    setFormStatus('copied');
   } catch {
+    const label = document.createElement('label');
+    label.className = 'scope-field';
+    const heading = document.createElement('span');
+    heading.dataset.i18n = 'briefPreview';
+    heading.textContent = copy[state.language].briefPreview;
     const temporary = document.createElement('textarea');
-    temporary.value = brief; document.body.appendChild(temporary); temporary.select();
-    const success = document.execCommand('copy'); temporary.remove();
-    if (status) status.textContent = success ? copy[state.language].copied : copy[state.language].copyFailed;
+    temporary.dataset.briefPreview = '';
+    temporary.readOnly = true;
+    temporary.rows = 12;
+    temporary.value = brief;
+    label.append(heading, temporary);
+    enquiryForm.appendChild(label);
+    temporary.focus();
+    temporary.select();
+    let success = false;
+    try { success = document.execCommand('copy'); } catch { /* Keep the selected brief available for manual copying. */ }
+    if (success) {
+      label.remove();
+      enquiryForm.querySelector('[type="submit"]')?.focus({ preventScroll: true });
+    }
+    setFormStatus(success ? 'copied' : 'copyFailed');
   }
 });
 
 document.querySelector('[data-download-brief]')?.addEventListener('click', () => {
-  if (!enquiryForm?.reportValidity()) return;
+  if (!validateEnquiry()) return;
   const blob = new Blob([buildEnquiryBrief()], { type: 'text/plain;charset=utf-8' });
   const link = document.createElement('a');
   link.href = URL.createObjectURL(blob);
   link.download = 'smh-marine-technical-enquiry.txt';
   document.body.appendChild(link); link.click(); link.remove();
-  URL.revokeObjectURL(link.href);
-  const status = enquiryForm.querySelector('[data-form-status]');
-  if (status) status.textContent = copy[state.language].downloaded;
+  window.setTimeout(() => URL.revokeObjectURL(link.href), 1000);
+  setFormStatus('downloaded');
 });
 
 const urgentLink = document.createElement('a');

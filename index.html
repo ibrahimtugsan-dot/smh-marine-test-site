@@ -6,22 +6,23 @@
     <meta name="description" content="China-headquartered SMH Marine provides ship repair, marine engineering, consultancy and global technical support for shipowners." />
     <meta name="theme-color" content="#061b2c" />
     <title>SMH Marine | China-Based Global Marine Engineering</title>
-    <link rel="stylesheet" href="assets/styles.css?v=53" />
-    <script src="assets/app.js?v=53" defer></script>
+    <link rel="stylesheet" href="assets/styles.css?v=54" />
+    <script src="assets/app.js?v=54" defer></script>
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <aside class="weather-strip" aria-label="Live weather for SMH Marine service locations">
+    <a class="skip-link" href="#main" data-i18n="skipToContent">Skip to content</a>
+    <aside class="weather-strip" aria-label="Live weather for SMH Marine service locations" data-i18n-aria-label="weatherRegionLabel">
       <div class="weather-strip-window" data-weather-ticker><span class="weather-loading" data-i18n="weatherLoading">Loading live conditions…</span></div>
+      <button class="weather-toggle" type="button" data-weather-toggle aria-pressed="false" aria-label="Pause weather ticker" data-i18n-aria-label="pauseWeather"><span aria-hidden="true">⏸</span></button>
     </aside>
     <header class="site-header" data-header>
-      <a class="brand" href="#top" aria-label="SMH Marine home">
-        <img src="assets/smh-marine-logo-cropped.png" alt="SMH Marine" />
+      <a class="brand" href="#top" aria-label="SMH Marine home" data-i18n-aria-label="homeLabel">
+        <img src="assets/smh-marine-logo-cropped.png" alt="SMH Marine" width="1138" height="922" />
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
-        <span></span><span></span><span></span><span class="sr-only">Open menu</span>
+        <span></span><span></span><span></span><span class="sr-only" data-i18n="openMenu">Open menu</span>
       </button>
-      <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-nav>
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation" data-i18n-aria-label="primaryNavigation" data-nav>
         <a href="#about" data-i18n="navCompany">Company</a>
         <a href="#services" data-i18n="navServices">Services</a>
         <a href="projects.html" data-i18n="navProjects">Projects</a>
@@ -31,7 +32,7 @@
       </nav>
     </header>
 
-    <main id="main">
+    <main id="main" tabindex="-1">
       <section class="hero" id="top" aria-labelledby="hero-title">
         <div class="hero-media" role="img" aria-label="Commercial vessel in dry dock"></div>
         <div class="hero-grid" aria-hidden="true"></div>
@@ -44,7 +45,7 @@
             <a class="button button-ghost" href="#network" data-i18n="heroNetwork">View global network</a>
           </div>
         </div>
-        <aside class="hero-network" aria-label="Global service network">
+        <aside class="hero-network" aria-label="Global service network" data-i18n-aria-label="globalNetworkLabel">
           <div class="hero-network-head">
             <span data-i18n="heroMapLabel">Global service network</span>
             <strong><b>24</b> <span data-i18n="heroMapPoints">network points</span></strong>
@@ -58,7 +59,7 @@
             </div>
           </div>
         </aside>
-        <div class="hero-facts shell" aria-label="Company highlights">
+        <div class="hero-facts shell" aria-label="Company highlights" data-i18n-aria-label="companyHighlightsLabel">
           <div><strong>15+</strong><span data-i18n="factYears">Years of marine experience</span></div>
           <div><strong>24</strong><span data-i18n="factLocations">Service network locations</span></div>
           <div><strong>24/7</strong><span data-i18n="factCoordination">Technical coordination</span></div>
@@ -76,7 +77,7 @@
           </div>
           <div class="china-proof">
             <p data-i18n="chinaCopy">Our China-based team of more than 20 experienced specialists combines deep knowledge of Chinese shipyards with owner-side technical and commercial oversight.</p>
-            <div class="china-metrics" aria-label="China experience highlights">
+            <div class="china-metrics" aria-label="China experience highlights" data-i18n-aria-label="chinaHighlightsLabel">
               <div><strong>20+</strong><span data-i18n="chinaMetricTeam">experienced local specialists based in China</span></div>
               <div><strong>15+</strong><span data-i18n="chinaMetricYears">years working in Chinese shipyards</span></div>
               <div><strong>200+</strong><span data-i18n="chinaMetricProjects">repair & newbuilding projects coordinated</span></div>
@@ -129,7 +130,7 @@
           </div>
           <div class="owner-advantage-body">
             <p data-i18n="ownerCopy">We scrutinize shipyard quotations, negotiate scope and pricing, control variations and extra work, verify progress and invoices, and challenge avoidable cost. The objective is clear: protect the owner's technical and commercial position without compromising safety, quality or delivery.</p>
-            <div class="owner-controls" aria-label="Owner-side commercial controls">
+            <div class="owner-controls" aria-label="Owner-side commercial controls" data-i18n-aria-label="ownerControlsLabel">
               <span data-i18n="ownerControl1">Scope control</span>
               <span data-i18n="ownerControl2">Price benchmarking & negotiation</span>
               <span data-i18n="ownerControl3">Variation & extra-work control</span>
@@ -159,7 +160,7 @@
           </div>
           <div class="leadership-grid">
             <article class="profile-card profile-card-dark">
-              <figure><img src="assets/evrim-bicer-portrait-smh.jpg" alt="Evrim Biçer at a shipyard wearing SMH Marine safety equipment" /></figure>
+              <figure><img src="assets/evrim-bicer-portrait-smh.jpg" width="941" height="1671" loading="lazy" decoding="async" alt="Evrim Biçer at a shipyard wearing SMH Marine safety equipment" /></figure>
               <div class="profile-content">
                 <p class="profile-role" data-i18n="evrimRole">Co-Founder · Türkiye & Europe Operations</p>
                 <h3>Evrim Biçer</h3>
@@ -170,7 +171,7 @@
               </div>
             </article>
             <article class="profile-card">
-              <figure><img src="assets/adem-corbaci-portrait-smh.jpg" alt="Adem Çorbacı at a shipyard wearing SMH Marine safety equipment" /></figure>
+              <figure><img src="assets/adem-corbaci-portrait-smh.jpg" width="1024" height="1536" loading="lazy" decoding="async" alt="Adem Çorbacı at a shipyard wearing SMH Marine safety equipment" /></figure>
               <div class="profile-content">
                 <p class="profile-role" data-i18n="ademRole">Co-Founder · China & Asia Operations</p>
                 <h3>Adem Çorbacı</h3>
@@ -350,8 +351,8 @@
           </div>
           <div class="network-layout">
             <div class="map-panel">
-              <div class="map-toolbar" role="group" aria-label="Map regions" data-map-filters></div>
-              <div class="map-stage" data-map aria-label="SMH Marine global service network map">
+              <div class="map-toolbar" role="group" aria-label="Map regions" data-i18n-aria-label="mapRegionsLabel" data-map-filters></div>
+              <div class="map-stage" data-map aria-label="SMH Marine global service network map" data-i18n-aria-label="networkMapLabel">
                 <img src="assets/world-map-v2.svg" alt="" aria-hidden="true" />
                 <div class="map-markers" data-map-markers></div>
                 <div class="map-detail" data-map-detail aria-live="polite">
@@ -394,7 +395,7 @@
             <p class="section-kicker" data-i18n="contactKicker">Technical enquiry</p>
             <h2 data-i18n="contactTitle">Tell us what the vessel needs.</h2>
             <p class="contact-copy" data-i18n="contactCopy">For urgent attendance or a planned project, contact Evrim Biçer directly by phone, email, WhatsApp or WeChat. The China office details are provided below.</p>
-            <address class="contact-channels" aria-label="SMH Marine direct contact channels">
+            <address class="contact-channels" aria-label="SMH Marine direct contact channels" data-i18n-aria-label="contactChannelsLabel">
               <a class="contact-channel" href="tel:+905305052140"><span class="channel-mark channel-mark-phone" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M7.1 3.5 9.4 8l-2 1.7a15.2 15.2 0 0 0 6.9 6.9l1.7-2 4.5 2.3-1.2 3.3c-.3.8-1.1 1.3-2 1.3C9.1 21 3 14.9 2.5 6.7c0-.9.5-1.7 1.3-2l3.3-1.2Z" /></svg></span><div><strong data-i18n="channelPhone">Phone</strong><small>+90 530 505 21 40</small></div></a>
               <a class="contact-channel" href="mailto:evrim@smh-marine.com"><span class="channel-mark channel-mark-email" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="2.5" y="4.5" width="19" height="15" rx="2" /><path d="m4 7 8 6 8-6" /></svg></span><div><strong data-i18n="channelEmail">Email</strong><small>evrim@smh-marine.com</small></div></a>
               <a class="contact-channel" href="https://wa.me/905305052140" target="_blank" rel="noopener"><span class="channel-mark channel-mark-whatsapp" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" /></svg></span><div><strong>WhatsApp</strong><small>+90 530 505 21 40</small></div></a>
@@ -408,16 +409,16 @@
               </div>
             </address>
           </div>
-          <form class="enquiry-builder" data-enquiry-form>
+          <form class="enquiry-builder" id="enquiry" data-enquiry-form>
             <div class="form-heading"><p data-i18n="formKicker">Technical request builder</p><strong data-i18n="formTitle">Prepare the information needed for a fast response.</strong></div>
-            <label><span data-i18n="fieldVessel">Vessel / project</span><input type="text" name="vessel" autocomplete="organization" required /></label>
+            <label><span data-i18n="fieldVessel">Vessel / project</span><input type="text" name="vessel" autocomplete="off" required /></label>
             <label><span data-i18n="fieldImo">IMO number</span><input type="text" name="imo" inputmode="numeric" pattern="[0-9]{7}" maxlength="7" placeholder="1234567" /></label>
             <label><span data-i18n="fieldVesselType">Vessel type</span><input type="text" name="vesselType" /></label>
             <label><span data-i18n="fieldLocation">Port / shipyard</span><input type="text" name="location" required /></label>
             <label><span data-i18n="fieldDate">Required attendance</span><input type="date" name="date" /></label>
             <label><span data-i18n="fieldService">Service category</span><select name="service"><option value="urgent" data-i18n="serviceOptionUrgent">Urgent technical attendance</option><option value="china-urgent" data-i18n="serviceOptionChinaUrgent">Emergency repair in China</option><option value="repair" data-i18n="serviceOptionRepair">Ship repair & dry-docking</option><option value="engine" data-i18n="serviceOptionEngine">Engine & crankshaft works</option><option value="retrofit" data-i18n="serviceOptionRetrofit">Retrofit & energy efficiency</option><option value="representation" data-i18n="serviceOptionOwner">Owner representation</option><option value="newbuilding" data-i18n="serviceOptionNewbuilding">Newbuilding supervision</option><option value="inspection" data-i18n="serviceOptionInspection">Inspection / survey</option></select></label>
             <label><span data-i18n="fieldContact">Company / contact person</span><input type="text" name="contact" autocomplete="name" /></label>
-            <label><span data-i18n="fieldContactRoute">Email / phone / WeChat</span><input type="text" name="contactRoute" autocomplete="email" /></label>
+            <label><span data-i18n="fieldContactRoute">Email / phone / WeChat</span><input type="text" name="contactRoute" autocomplete="off" /></label>
             <label class="scope-field"><span data-i18n="fieldScope">Technical scope</span><textarea name="scope" rows="5" required></textarea></label>
             <label class="attachment-field"><span data-i18n="fieldAttachments">Photos, reports or specifications</span><input type="file" name="attachments" multiple accept="image/*,.pdf,.doc,.docx,.xls,.xlsx" /><small data-i18n="attachmentsNote">Files remain on your device. Add them when sending the copied brief through the approved contact channel.</small></label>
             <div class="form-actions"><button class="button button-primary" type="submit" data-i18n="copyBrief">Prepare & copy brief</button><button class="button button-ghost" type="button" data-download-brief data-i18n="downloadBrief">Download as TXT</button></div>
@@ -430,7 +431,7 @@
     <footer class="site-footer">
       <div class="shell footer-grid">
         <div class="footer-brand">
-          <img src="assets/smh-marine-logo-cropped.png" alt="SMH Marine" />
+          <img src="assets/smh-marine-logo-cropped.png" alt="SMH Marine" width="1138" height="922" />
           <p data-i18n="footerStatement">Marine consultancy, ship repair and engineering support across a trusted global network.</p>
         </div>
         <div>
