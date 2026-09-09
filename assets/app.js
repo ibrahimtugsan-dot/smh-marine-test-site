@@ -88,9 +88,9 @@ const regions = [
 
 const locations = [
   { name: { en: 'Istanbul', tr: 'İstanbul' }, region: 'turkiye', lat: 41.01, lon: 28.98 }, { name: { en: 'Yalova', tr: 'Yalova' }, region: 'turkiye', lat: 40.66, lon: 29.28 }, { name: { en: 'Canakkale', tr: 'Çanakkale' }, region: 'turkiye', lat: 40.15, lon: 26.41 },
-  { name: { en: 'Lisbon', tr: 'Lizbon' }, region: 'europe-africa', lat: 38.72, lon: -9.14 }, { name: { en: 'Dakar', tr: 'Dakar' }, region: 'europe-africa', lat: 14.72, lon: -17.47 }, { name: { en: 'Antwerp', tr: 'Anvers' }, region: 'europe-africa', lat: 51.22, lon: 4.4 }, { name: { en: 'Rotterdam', tr: 'Rotterdam' }, region: 'europe-africa', lat: 51.92, lon: 4.48 }, { name: { en: 'Amsterdam', tr: 'Amsterdam' }, region: 'europe-africa', lat: 52.37, lon: 4.9 }, { name: { en: 'Poland', tr: 'Polonya' }, region: 'europe-africa', lat: 51.92, lon: 19.15 }, { name: { en: 'Lithuania', tr: 'Litvanya' }, region: 'europe-africa', lat: 55.17, lon: 23.88 },
+  { name: { en: 'Lisbon', tr: 'Lizbon' }, region: 'europe-africa', lat: 38.72, lon: -9.14 }, { name: { en: 'Dakar', tr: 'Dakar' }, region: 'europe-africa', lat: 14.72, lon: -17.47 }, { name: { en: 'Antwerp', tr: 'Anvers' }, region: 'europe-africa', lat: 51.22, lon: 4.4 }, { name: { en: 'Rotterdam', tr: 'Rotterdam' }, region: 'europe-africa', lat: 51.92, lon: 4.48 }, { name: { en: 'Amsterdam', tr: 'Amsterdam' }, region: 'europe-africa', lat: 52.37, lon: 4.9 }, { name: { en: 'Gdynia', tr: 'Gdynia' }, region: 'europe-africa', lat: 54.5, lon: 18.55 }, { name: { en: 'Klaipėda', tr: 'Klaipėda' }, region: 'europe-africa', lat: 55.7167, lon: 21.1167 },
   { name: { en: 'Oman', tr: 'Umman' }, region: 'middle-east', lat: 21.47, lon: 55.98 }, { name: { en: 'Dubai', tr: 'Dubai' }, region: 'middle-east', lat: 25.2, lon: 55.27 }, { name: { en: 'Bahrain', tr: 'Bahreyn' }, region: 'middle-east', lat: 26.07, lon: 50.56 }, { name: { en: 'Qatar', tr: 'Katar' }, region: 'middle-east', lat: 25.29, lon: 51.53 },
-  { name: { en: 'Veracruz', tr: 'Veracruz' }, region: 'americas', lat: 19.17, lon: -96.13 }, { name: { en: 'Santos, Brazil', tr: 'Santos, Brezilya' }, region: 'americas', lat: -23.96, lon: -46.33 },
+  { name: { en: 'Veracruz', tr: 'Veracruz' }, region: 'americas', lat: 19.17, lon: -96.13 }, { name: { en: 'Rio de Janeiro, Brazil', tr: 'Rio de Janeiro, Brezilya' }, region: 'americas', lat: -22.9064, lon: -43.1725 },
   { name: { en: 'Shanghai', tr: 'Şanghay' }, region: 'china', lat: 31.23, lon: 121.47 }, { name: { en: 'Dalian', tr: 'Dalian' }, region: 'china', lat: 38.91, lon: 121.61 }, { name: { en: 'Nantong', tr: 'Nantong' }, region: 'china', lat: 31.98, lon: 120.89 }, { name: { en: 'Zhoushan', tr: 'Zhoushan' }, region: 'china', lat: 29.99, lon: 122.21 }, { name: { en: 'Tianjin', tr: 'Tianjin' }, region: 'china', lat: 39.34, lon: 117.36 },
   { name: { en: 'Singapore', tr: 'Singapur' }, region: 'asia-pacific', lat: 1.35, lon: 103.82 }, { name: { en: 'Batam, Indonesia', tr: 'Batam, Endonezya' }, region: 'asia-pacific', lat: 1.05, lon: 104.03 }, { name: { en: 'Bangkok, Thailand', tr: 'Bangkok, Tayland' }, region: 'asia-pacific', lat: 13.76, lon: 100.5 }
 ];
@@ -98,10 +98,10 @@ const locations = [
 const markerOffsets = {
   Istanbul: [6, -7], Yalova: [1, 3], Canakkale: [-6, 8], Antwerp: [-8, 5], Rotterdam: [0, -2], Amsterdam: [8, -8],
   Oman: [11, 5], Dubai: [6, -4], Bahrain: [-8, -2], Qatar: [1, 7], Shanghai: [8, 2], Dalian: [8, -9], Nantong: [-8, 0], Zhoushan: [9, 9], Tianjin: [-8, -9],
-  Singapore: [-7, -3], 'Batam, Indonesia': [7, 5], 'Bangkok, Thailand': [-2, -8]
+  Singapore: [-7, -3], 'Batam, Indonesia': [7, 5], 'Bangkok, Thailand': [-2, -8], Gdynia: [-5, 5], 'Klaipėda': [5, -5]
 };
 
-const WEATHER_CACHE_KEY = 'smh-port-weather-v1';
+const WEATHER_CACHE_KEY = 'smh-port-weather-v2';
 const WEATHER_REFRESH_MS = 15 * 60 * 1000;
 const WEATHER_CACHE_MAX_AGE = 3 * 60 * 60 * 1000;
 const weatherTicker = document.querySelector('[data-weather-ticker]');
