@@ -285,8 +285,13 @@ a.contact-channel::after { position: absolute; top: 50%; right: 17px; color: rgb
 a.contact-channel:hover, a.contact-channel:focus-visible { border-color: rgba(239,122,45,.72); background: linear-gradient(135deg, rgba(13,78,119,.48), rgba(3,24,39,.68)); box-shadow: inset 3px 0 0 var(--orange-bright), 0 18px 34px rgba(1,15,25,.24); transform: translateY(-3px); }
 a.contact-channel:hover::after, a.contact-channel:focus-visible::after { color: var(--orange-bright); transform: translate(2px,-55%); }
 .contact-channel-address { grid-column: 1 / -1; min-height: 102px; padding-right: 22px; background: linear-gradient(110deg, rgba(13,78,119,.34), rgba(3,24,39,.52)); }
-.channel-mark { display: grid; width: 52px; height: 52px; flex: 0 0 52px; place-items: center; border: 1px solid rgba(239,122,45,.58); color: var(--orange-bright); background: rgba(3,24,39,.46); box-shadow: 0 0 0 6px rgba(239,122,45,.045); }
-.channel-mark svg { width: 23px; height: 23px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.channel-mark { display: grid; width: 52px; height: 52px; flex: 0 0 52px; place-items: center; border: 1px solid rgba(255,255,255,.18); border-radius: 14px; color: white; background: #0d5f94; box-shadow: 0 7px 18px rgba(1,15,25,.25); }
+.channel-mark svg { width: 24px; height: 24px; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.channel-mark-email { background: #c75819; }
+.channel-mark-whatsapp { background: #25d366; }
+.channel-mark-wechat { background: #07c160; }
+.channel-mark-whatsapp svg, .channel-mark-wechat svg { width: 27px; height: 27px; stroke: none; }
+.channel-mark-location { background: #2e85b9; }
 .channel-mark-linkedin { text-transform: none; }
 .contact-channel div { display: grid; min-width: 0; gap: 3px; }
 .contact-channel strong { color: white; font-size: 1rem; line-height: 1.25; }
