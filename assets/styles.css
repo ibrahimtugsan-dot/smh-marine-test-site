@@ -13,18 +13,20 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 body {
   margin: 0;
   color: var(--ink);
   background: var(--paper);
-  font-family: "Segoe UI", "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.65;
+  overflow-x: hidden;
 }
 img { display: block; max-width: 100%; }
 a { color: inherit; }
 button, a { -webkit-tap-highlight-color: transparent; }
+h1, h2, h3, h4, p, li, label, strong, small { min-width: 0; word-break: normal; overflow-wrap: break-word; hyphens: auto; }
 .shell { width: var(--shell); margin-inline: auto; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
 .skip-link { position: fixed; top: 8px; left: 8px; z-index: 100; transform: translateY(-150%); padding: 10px 14px; background: white; color: var(--ink); }
@@ -357,7 +359,7 @@ html[lang="tr"] .hero h1 { letter-spacing: -.045em; line-height: 1; }
   .brand { width: 102px; height: 68px; }
   .menu-toggle { display: grid; width: 46px; height: 46px; place-content: center; gap: 5px; border: 1px solid rgba(255,255,255,.45); background: rgba(4,30,49,.4); cursor: pointer; }
   .menu-toggle span:not(.sr-only) { width: 22px; height: 2px; background: white; }
-  .site-nav { position: fixed; inset: 78px 0 auto; display: none; flex-direction: column; align-items: flex-start; gap: 0; padding: 18px 24px 26px; background: var(--ink); box-shadow: 0 16px 30px rgba(0,0,0,.2); }
+  .site-nav { position: fixed; inset: 78px 0 auto; display: none; max-height: calc(100dvh - 88px); overflow-y: auto; flex-direction: column; align-items: flex-start; gap: 0; padding: 18px 24px 26px; background: var(--ink); box-shadow: 0 16px 30px rgba(0,0,0,.2); overscroll-behavior: contain; }
   .site-nav.is-open { display: flex; }
   .site-nav a { width: 100%; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,.1); }
   .language-switch { margin-top: 16px; }
@@ -390,16 +392,26 @@ html[lang="tr"] .hero h1 { letter-spacing: -.045em; line-height: 1; }
 
 @media (max-width: 620px) {
   :root { --shell: min(100% - 28px, 1180px); }
+  body { font-size: 1rem; }
+  h2 { font-size: clamp(2rem, 9.2vw, 2.75rem); line-height: 1.08; letter-spacing: -.035em; }
+  .site-header { width: calc(100% - 20px); }
+  .site-header.is-scrolled { width: calc(100% - 12px); }
+  .site-nav { right: 10px; left: 10px; padding: 12px 18px 20px; }
+  .site-nav a { padding: 13px 0; font-size: .95rem; }
   .hero { min-height: 1040px; padding-bottom: 186px; }
   .hero-content { padding-top: 112px; }
-  .hero h1 { font-size: clamp(2.75rem, 14vw, 4.2rem); }
-  .hero-copy { font-size: .98rem; }
+  .hero h1 { font-size: clamp(2.5rem, 11vw, 3.35rem); line-height: .98; letter-spacing: -.045em; }
+  html[lang="tr"] .hero h1 { font-size: clamp(2.35rem, 10.5vw, 3.15rem); line-height: 1.04; letter-spacing: -.035em; }
+  .hero h1 .outline-title { -webkit-text-stroke-width: .8px; }
+  .hero-copy { font-size: 1rem; line-height: 1.65; }
   .hero-actions { align-items: stretch; flex-direction: column; }
-  .button { width: 100%; }
+  .button { width: 100%; min-height: 48px; padding: 12px 18px; font-size: .93rem; line-height: 1.35; text-align: center; }
   .hero-facts strong { font-size: 1.5rem; }
   .hero-facts .fact-word { font-size: 1rem; }
-  .hero-facts span { font-size: .7rem; }
+  .hero-facts span { font-size: .72rem; }
   .section { padding: 76px 0; }
+  .china-lead h2, .owner-advantage-lead h2 { font-size: clamp(2.05rem, 9.2vw, 2.8rem); line-height: 1.08; }
+  .china-lead > p:last-child, .owner-advantage-body > p, .intro-copy p, .contact-copy, .projects-hero-content > p:last-child, .portfolio-status > p:last-child, .detail-hero-content > p:last-child, .detail-promise > p:last-child { font-size: 1rem; line-height: 1.65; }
   .china-proof { padding: 26px 22px; }
   .china-metrics { grid-template-columns: 1fr; }
   .china-metrics div, .china-metrics div:first-child { padding: 18px 0; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.12); }
@@ -407,12 +419,14 @@ html[lang="tr"] .hero h1 { letter-spacing: -.045em; line-height: 1; }
   .china-expertise ul { grid-template-columns: 1fr; }
   .china-cities { line-height: 1.8; }
   .china-region-grid, .owner-example-grid, .expertise-link-grid { grid-template-columns: 1fr; }
+  .china-region-heading h3, .china-urgent-heading h3, .owner-example-heading h3 { font-size: clamp(1.8rem, 8vw, 2.3rem); line-height: 1.1; }
   .china-urgent-repairs { padding: 26px 22px; }
   .china-urgent-repairs ul { grid-template-columns: 1fr; }
   .owner-advantage-body { padding: 28px 22px; }
   .owner-controls { grid-template-columns: 1fr; }
   .service-grid { grid-template-columns: 1fr; }
   .service-card { min-height: 300px; padding: 30px 26px; }
+  .service-card h3 { font-size: clamp(1.55rem, 7vw, 1.85rem); line-height: 1.12; }
   .hero-network { bottom: 182px; width: calc(100% - 28px); }
   .hero-network-head { padding: 13px 14px; }
   .hero-network-head > span { max-width: 160px; }
@@ -420,6 +434,8 @@ html[lang="tr"] .hero h1 { letter-spacing: -.045em; line-height: 1; }
   .profile-card { grid-template-columns: 1fr; min-height: 0; }
   .profile-card figure { height: 520px; }
   .profile-content { padding: 30px 24px; }
+  .profile-content h3 { font-size: clamp(2rem, 9vw, 2.55rem); line-height: 1.05; }
+  .profile-content > p:not(.profile-role):not(.profile-focus) { font-size: .95rem; }
   .profile-focus { margin-top: 20px; }
   .capability-row ul { grid-template-columns: 1fr; }
   .network-summary { grid-template-columns: 72px 1fr; }
@@ -429,18 +445,43 @@ html[lang="tr"] .hero h1 { letter-spacing: -.045em; line-height: 1; }
   .contact-channels, .project-category-grid { grid-template-columns: 1fr; }
   .projects-hero { min-height: 590px; }
   .projects-hero-content { padding-top: 150px; padding-bottom: 70px; }
-  .projects-hero h1 { font-size: clamp(3rem, 15vw, 5rem); }
+  .projects-hero h1, .detail-hero h1 { font-size: clamp(2.65rem, 11.5vw, 3.8rem); line-height: .98; letter-spacing: -.045em; }
+  html[lang="tr"] .projects-hero h1, html[lang="tr"] .detail-hero h1 { font-size: clamp(2.4rem, 10.5vw, 3.4rem); line-height: 1.02; letter-spacing: -.035em; }
+  .portfolio-status h2, .detail-promise h2 { font-size: clamp(2rem, 9vw, 2.7rem); line-height: 1.08; }
   .enquiry-builder { grid-template-columns: 1fr; padding: 24px; }
+  .enquiry-builder input, .enquiry-builder textarea, .enquiry-builder select { min-height: 48px; font-size: 16px; line-height: 1.35; }
+  .enquiry-builder textarea { min-height: 150px; }
   .enquiry-builder .scope-field, .enquiry-builder .attachment-field, .form-heading, .form-actions { grid-column: auto; }
   .form-actions { flex-direction: column; }
-  .urgent-floating-link { right: 12px; bottom: 12px; min-height: 44px; padding: 10px 15px 10px 36px; font-size: .8rem; }
+  .urgent-floating-link { right: 12px; bottom: 12px; max-width: calc(100% - 24px); min-height: 46px; padding: 10px 15px 10px 36px; font-size: .8rem; line-height: 1.25; white-space: normal; }
   .urgent-floating-link::before { left: 15px; }
   .detail-hero { min-height: 590px; }
   .detail-hero-content { padding-top: 140px; padding-bottom: 70px; }
   .detail-back { margin-bottom: 50px; }
-  .detail-hero h1 { font-size: clamp(3rem, 14vw, 5rem); }
+  .detail-scope-list li { min-height: 84px; padding: 20px 16px 20px 54px; font-size: .95rem; }
   .footer-grid { grid-template-columns: 1fr; gap: 36px; }
   .footer-bottom { align-items: flex-start; flex-direction: column; gap: 6px; }
+}
+
+@media (max-width: 380px) {
+  :root { --shell: min(100% - 22px, 1180px); }
+  .site-header { width: calc(100% - 14px); }
+  .brand { width: 94px; height: 64px; }
+  .site-header.is-scrolled .brand { width: 92px; height: 58px; }
+  .hero h1 { font-size: clamp(2.25rem, 11.4vw, 2.7rem); }
+  html[lang="tr"] .hero h1 { font-size: clamp(2.15rem, 10.8vw, 2.55rem); }
+  .hero-facts div { gap: 9px; padding: 12px 10px; }
+  .hero-facts span { max-width: 112px; }
+  .hero-network { width: calc(100% - 22px); }
+  .hero-network-head > span { max-width: 138px; line-height: 1.35; }
+  .section { padding: 68px 0; }
+  .service-card, .china-proof, .china-urgent-repairs, .owner-advantage-body, .enquiry-builder { padding-right: 18px; padding-left: 18px; }
+  .profile-card figure { height: 440px; }
+  .profile-content { padding: 28px 20px; }
+  .owner-controls span { min-height: 76px; padding: 17px 16px 17px 38px; }
+  .owner-controls span::before { left: 16px; }
+  .projects-hero h1, .detail-hero h1 { font-size: clamp(2.3rem, 11.3vw, 2.75rem); }
+  html[lang="tr"] .projects-hero h1, html[lang="tr"] .detail-hero h1 { font-size: clamp(2.15rem, 10.7vw, 2.6rem); }
 }
 
 @media (prefers-reduced-motion: reduce) {
