@@ -1,0 +1,11 @@
+# SMH Marine publishes this corporate content for public discovery.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://ibrahimtugsan-dot.github.io/smh-marine-test-site/sitemap.xml

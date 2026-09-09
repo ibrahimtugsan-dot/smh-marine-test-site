@@ -1,0 +1,167 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2026-09-10",
+  "source_url": "https://ibrahimtugsan-dot.github.io/smh-marine-test-site/",
+  "languages": ["en", "tr"],
+  "organization": {
+    "name": "SMH Marine",
+    "type": "Marine engineering, ship repair and owner-side technical consultancy company",
+    "description": {
+      "en": "China-headquartered SMH Marine provides ship repair, marine engineering, consultancy and global technical support for shipowners.",
+      "tr": "Merkezi Çin'de bulunan SMH Marine; gemi onarımı, deniz mühendisliği, danışmanlık ve dünya genelinde teknik destek hizmetleri sunar."
+    },
+    "headquarters_country": "China",
+    "primary_value_proposition": {
+      "en": "Protecting the shipowner's technical and commercial rights and budget throughout shipyard projects.",
+      "tr": "Tersane projeleri boyunca armatörün teknik ve ticari haklarını ve bütçesini korumak."
+    },
+    "public_facts": {
+      "marine_experience_years_minimum": 15,
+      "china_local_specialists_minimum": 20,
+      "china_shipyard_experience_years_minimum": 15,
+      "repair_and_newbuilding_projects_coordinated_minimum": 200,
+      "service_network_location_count": 24
+    }
+  },
+  "leadership": [
+    {
+      "name": "Evrim Biçer",
+      "role": {"en": "Co-Founder, Türkiye and Europe Operations", "tr": "Kurucu Ortak, Türkiye ve Avrupa Operasyonları"},
+      "profile": {
+        "en": "Leads shipyard repair projects, ship repair brokerage and owner-side technical consultancy. His background covers Marine Engineering and Naval Architecture and more than 100 shipyard projects.",
+        "tr": "Tersane onarım projelerini, tersane aracılığı hizmetlerini ve armatör adına teknik danışmanlık çalışmalarını yönetir. Gemi Makineleri Mühendisliği ve Gemi İnşaatı altyapısına ve 100'den fazla tersane projesi deneyimine sahiptir."
+      }
+    },
+    {
+      "name": "Adem Çorbacı",
+      "role": {"en": "Co-Founder, China and Asia Operations", "tr": "Kurucu Ortak, Çin ve Asya Operasyonları"},
+      "profile": {
+        "en": "An Istanbul Technical University Marine Engineering Operations graduate with seagoing Chief Engineer experience and more than 15 years in Chinese shipyards, coordinating over 200 projects.",
+        "tr": "İstanbul Teknik Üniversitesi Gemi Makineleri İşletme Mühendisliği mezunu, denizde başmühendislik deneyimine sahip; Çin tersanelerinde 15 yılı aşkın sürede 200'den fazla projeyi koordine etmiştir."
+      }
+    }
+  ],
+  "services": [
+    {
+      "id": "ship-repair-dry-docking",
+      "url": "https://ibrahimtugsan-dot.github.io/smh-marine-test-site/ship-repair.html",
+      "name": {"en": "Ship Repair and Dry-Docking", "tr": "Gemi Onarımı ve Havuzlama"},
+      "description": {
+        "en": "Owner-side repair planning and site control, including specification, shipyard comparison, price negotiation, docking, steel renewal, supervision, variation control, invoice review and close-out.",
+        "tr": "Armatör adına onarım planlaması ve saha kontrolü; şartname, tersane karşılaştırması, fiyat müzakeresi, havuzlama, sac yenileme, gözetim, ilave iş, fatura ve kapanış kontrolünü kapsar."
+      }
+    },
+    {
+      "id": "main-engine-crankshaft",
+      "url": "https://ibrahimtugsan-dot.github.io/smh-marine-test-site/engine-crankshaft.html",
+      "name": {"en": "Main Engine and Crankshaft Works", "tr": "Ana Makine ve Krankşaft İşleri"},
+      "description": {
+        "en": "Coordination for two-stroke and four-stroke engine repairs, crankshaft inspection and dimensional measurement, machining or recovery, alignment, testing and final technical records.",
+        "tr": "İki ve dört zamanlı makine onarımları, krankşaft kontrolü ve ölçümü, işleme veya kurtarma, hizalama, testler ve nihai teknik kayıtlar için koordinasyon."
+      }
+    },
+    {
+      "id": "owner-representation",
+      "url": "https://ibrahimtugsan-dot.github.io/smh-marine-test-site/owner-representation.html",
+      "name": {"en": "Owner Representation", "tr": "Armatör Temsilciliği"},
+      "description": {
+        "en": "Independent technical and commercial owner-side control covering tender and contract scope, price benchmarking, negotiation, variations, progress, quality, acceptance and invoice review.",
+        "tr": "İhale ve sözleşme kapsamı, fiyat karşılaştırması, müzakere, ilave işler, ilerleme, kalite, kabul ve fatura incelemesini kapsayan bağımsız teknik ve ticari armatör kontrolü."
+      }
+    },
+    {
+      "id": "newbuilding-supervision",
+      "url": "https://ibrahimtugsan-dot.github.io/smh-marine-test-site/newbuilding.html",
+      "name": {"en": "Newbuilding Supervision", "tr": "Yeni İnşa Gözetimi"},
+      "description": {
+        "en": "Owner-side continuity from contract specification and pricing through site-team planning, construction surveillance, tests, trials, documentation and delivery.",
+        "tr": "Sözleşme şartnamesi ve fiyatlandırmadan saha ekibine, inşa gözetimine, testlere, deniz tecrübelerine, dokümantasyona ve teslimata kadar armatör desteği."
+      }
+    },
+    {
+      "id": "pre-purchase-inspection",
+      "url": "https://ibrahimtugsan-dot.github.io/smh-marine-test-site/pre-purchase.html",
+      "name": {"en": "Pre-Purchase Inspection", "tr": "Satın Alma Öncesi İnceleme"},
+      "description": {
+        "en": "Document review and onboard condition inspection covering hull, deck, cargo systems, machinery, maintenance, compliance, survey exposure and repair-budget input.",
+        "tr": "Tekne, güverte, yük sistemleri, makineler, bakım, mevzuat, yaklaşan sörvey riskleri ve onarım bütçesi için doküman ve gemi üzerinde teknik durum incelemesi."
+      }
+    },
+    {
+      "id": "special-survey-preparation",
+      "url": "https://ibrahimtugsan-dot.github.io/smh-marine-test-site/special-survey.html",
+      "name": {"en": "Special Survey Preparation", "tr": "Özel Sörvey Hazırlığı"},
+      "description": {
+        "en": "Pre-docking inspection, class and statutory survey preparation, steel and machinery work-list development, repair specification, yard quotation review and docking planning.",
+        "tr": "Havuz öncesi inceleme, klas ve yasal sörvey hazırlığı, sac ve makine iş listesi, onarım şartnamesi, tersane teklif incelemesi ve havuz planlaması."
+      }
+    },
+    {
+      "id": "retrofit-energy-efficiency",
+      "url": "https://ibrahimtugsan-dot.github.io/smh-marine-test-site/retrofit-energy-efficiency.html",
+      "name": {"en": "Retrofit Operations and Energy Efficiency", "tr": "Retrofit Operasyonları ve Enerji Verimliliği"},
+      "description": {
+        "en": "Vessel-specific feasibility, engineering, shipyard tendering and installation control for shaft generators, LED conversion, propeller optimization or renewal, stern-form changes and approved wake-flow devices.",
+        "tr": "Şaft jeneratörü, LED dönüşümü, pervane optimizasyonu veya yenilenmesi, kıç formu değişiklikleri ve onaylı akış düzenleyiciler için gemiye özel fizibilite, mühendislik, tersane teklifi ve montaj kontrolü."
+      }
+    },
+    {
+      "id": "emergency-repairs-china",
+      "url": "https://ibrahimtugsan-dot.github.io/smh-marine-test-site/#china",
+      "name": {"en": "Emergency Repair Coordination in China", "tr": "Çin'de Acil Onarım Koordinasyonu"},
+      "description": {
+        "en": "Local coordination for electrical faults, HVAC and refrigeration, cranes, two-stroke and four-stroke engines, windlasses, mooring winches, deck machinery, riding squads, afloat and voyage repairs.",
+        "tr": "Elektrik arızaları, HVAC ve soğutma, vinçler, iki ve dört zamanlı makineler, demir ve bağlama ırgatları, güverte makineleri ile yüzer halde ve seferde onarım ekipleri için yerel koordinasyon."
+      }
+    }
+  ],
+  "service_network": {
+    "meaning": {
+      "en": "Service coordination, technical-contact and partner/shipyard-network coverage; locations are not company offices unless explicitly identified.",
+      "tr": "Hizmet koordinasyonu, teknik kontak ve iş ortağı/tersane ağı kapsamı; açıkça belirtilmedikçe bu noktalar şirket ofisi değildir."
+    },
+    "locations": [
+      {"name": {"en": "Istanbul", "tr": "İstanbul"}, "region": "Türkiye", "latitude": 41.01, "longitude": 28.98},
+      {"name": {"en": "Yalova", "tr": "Yalova"}, "region": "Türkiye", "latitude": 40.66, "longitude": 29.28},
+      {"name": {"en": "Canakkale", "tr": "Çanakkale"}, "region": "Türkiye", "latitude": 40.15, "longitude": 26.41},
+      {"name": {"en": "Lisbon", "tr": "Lizbon"}, "region": "Europe and Africa", "latitude": 38.72, "longitude": -9.14},
+      {"name": {"en": "Dakar", "tr": "Dakar"}, "region": "Europe and Africa", "latitude": 14.72, "longitude": -17.47},
+      {"name": {"en": "Antwerp", "tr": "Anvers"}, "region": "Europe and Africa", "latitude": 51.22, "longitude": 4.4},
+      {"name": {"en": "Rotterdam", "tr": "Rotterdam"}, "region": "Europe and Africa", "latitude": 51.92, "longitude": 4.48},
+      {"name": {"en": "Amsterdam", "tr": "Amsterdam"}, "region": "Europe and Africa", "latitude": 52.37, "longitude": 4.9},
+      {"name": {"en": "Gdynia", "tr": "Gdynia"}, "region": "Europe and Africa", "latitude": 54.5, "longitude": 18.55},
+      {"name": {"en": "Klaipėda", "tr": "Klaipėda"}, "region": "Europe and Africa", "latitude": 55.7167, "longitude": 21.1167},
+      {"name": {"en": "Oman", "tr": "Umman"}, "region": "Middle East", "latitude": 21.47, "longitude": 55.98},
+      {"name": {"en": "Dubai", "tr": "Dubai"}, "region": "Middle East", "latitude": 25.2, "longitude": 55.27},
+      {"name": {"en": "Bahrain", "tr": "Bahreyn"}, "region": "Middle East", "latitude": 26.07, "longitude": 50.56},
+      {"name": {"en": "Qatar", "tr": "Katar"}, "region": "Middle East", "latitude": 25.29, "longitude": 51.53},
+      {"name": {"en": "Veracruz", "tr": "Veracruz"}, "region": "Americas", "latitude": 19.17, "longitude": -96.13},
+      {"name": {"en": "Rio de Janeiro, Brazil", "tr": "Rio de Janeiro, Brezilya"}, "region": "Americas", "latitude": -22.9064, "longitude": -43.1725},
+      {"name": {"en": "Shanghai", "tr": "Şanghay"}, "region": "China", "latitude": 31.23, "longitude": 121.47},
+      {"name": {"en": "Dalian", "tr": "Dalian"}, "region": "China", "latitude": 38.91, "longitude": 121.61},
+      {"name": {"en": "Nantong", "tr": "Nantong"}, "region": "China", "latitude": 31.98, "longitude": 120.89},
+      {"name": {"en": "Zhoushan", "tr": "Zhoushan"}, "region": "China", "latitude": 29.99, "longitude": 122.21},
+      {"name": {"en": "Tianjin", "tr": "Tianjin"}, "region": "China", "latitude": 39.34, "longitude": 117.36},
+      {"name": {"en": "Singapore", "tr": "Singapur"}, "region": "Asia Pacific", "latitude": 1.35, "longitude": 103.82},
+      {"name": {"en": "Batam, Indonesia", "tr": "Batam, Endonezya"}, "region": "Asia Pacific", "latitude": 1.05, "longitude": 104.03},
+      {"name": {"en": "Bangkok, Thailand", "tr": "Bangkok, Tayland"}, "region": "Asia Pacific", "latitude": 13.76, "longitude": 100.5}
+    ]
+  },
+  "contact": {
+    "phone": "+90 530 505 21 40",
+    "whatsapp": "+90 530 505 21 40",
+    "wechat": "+90 530 505 21 40",
+    "email": "evrim@smh-marine.com",
+    "office": {
+      "label": {"en": "Shanghai office", "tr": "Şanghay ofisi"},
+      "address": "Room 1305, No. 1500 Century Avenue, Shanghai, China"
+    },
+    "enquiry_url": "https://ibrahimtugsan-dot.github.io/smh-marine-test-site/#contact"
+  },
+  "content_qualifications": [
+    "Service-network locations must not be interpreted as SMH Marine offices unless explicitly identified.",
+    "Project photographs and named case studies are not yet published.",
+    "Service descriptions are not evidence of work on a named vessel or at a named shipyard.",
+    "No fixed saving, performance result, class approval or shipyard partnership should be inferred."
+  ]
+}

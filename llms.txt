@@ -1,0 +1,49 @@
+# SMH Marine
+
+> SMH Marine is a China-headquartered marine engineering, ship repair and owner-side technical consultancy company. The public website is available in English and Turkish and is designed to work without Google-hosted runtime services.
+
+## Current approved company facts
+
+- SMH Marine protects shipowners' technical and commercial interests in shipyard projects through scope, price, variation, progress and invoice control.
+- China is the company's headquarters country and strongest shipyard base.
+- The China-based delivery network includes more than 20 experienced local specialists, more than 15 years of Chinese shipyard experience and more than 200 coordinated repair and newbuilding projects.
+- Evrim Biçer is Co-Founder responsible for Türkiye and Europe operations.
+- Adem Çorbacı is Co-Founder responsible for China and Asia operations.
+- The Shanghai contact office is at Room 1305, No. 1500 Century Avenue, Shanghai, China.
+
+## Specialist services
+
+- [Ship Repair and Dry-Docking](https://ibrahimtugsan-dot.github.io/smh-marine-test-site/ship-repair.html): repair specification, shipyard comparison, price negotiation, docking, steel renewal, supervision, variation control and close-out.
+- [Main Engine and Crankshaft Works](https://ibrahimtugsan-dot.github.io/smh-marine-test-site/engine-crankshaft.html): two-stroke and four-stroke engine repairs, crankshaft inspection and repair coordination, alignment, testing and technical records.
+- [Owner Representation](https://ibrahimtugsan-dot.github.io/smh-marine-test-site/owner-representation.html): independent owner-side technical and commercial control from tender review to final invoice.
+- [Newbuilding Supervision](https://ibrahimtugsan-dot.github.io/smh-marine-test-site/newbuilding.html): contract, pricing, site-team, quality, trials and delivery support.
+- [Pre-Purchase Inspection](https://ibrahimtugsan-dot.github.io/smh-marine-test-site/pre-purchase.html): document review, onboard inspection, condition assessment, risk identification and repair-budget input.
+- [Special Survey Preparation](https://ibrahimtugsan-dot.github.io/smh-marine-test-site/special-survey.html): pre-docking inspection, class and statutory survey preparation, repair specification, tender review and docking planning.
+- [Retrofit Operations and Energy Efficiency](https://ibrahimtugsan-dot.github.io/smh-marine-test-site/retrofit-energy-efficiency.html): feasibility, shaft generators, LED conversion, propeller and stern-flow improvements, installation control and performance verification.
+- [Emergency repair coordination in China](https://ibrahimtugsan-dot.github.io/smh-marine-test-site/#china): electrical faults, HVAC and refrigeration, cranes, two-stroke and four-stroke engines, windlasses, mooring winches, deck machinery, afloat and voyage repairs.
+
+## Service network
+
+SMH Marine coordinates services through 24 approved network locations: Istanbul, Yalova, Canakkale, Lisbon, Dakar, Antwerp, Rotterdam, Amsterdam, Gdynia, Klaipėda, Oman, Dubai, Bahrain, Qatar, Veracruz, Rio de Janeiro, Shanghai, Dalian, Nantong, Zhoushan, Tianjin, Singapore, Batam and Bangkok.
+
+These locations represent service coordination, technical contacts and partner/shipyard-network coverage. They are not SMH Marine offices unless a page explicitly identifies an office.
+
+## Contact
+
+- Phone, WhatsApp and WeChat: +90 530 505 21 40
+- Email: evrim@smh-marine.com
+- [Technical enquiry and contact](https://ibrahimtugsan-dot.github.io/smh-marine-test-site/#contact)
+- [Project portfolio status](https://ibrahimtugsan-dot.github.io/smh-marine-test-site/projects.html)
+
+## Türkçe kısa özet
+
+SMH Marine, merkezi Çin'de bulunan; gemi onarımı, deniz mühendisliği, yeni inşa, sörvey hazırlığı, enerji verimliliği ve armatör adına teknik-ticari kontrol hizmetleri sunan bir denizcilik şirketidir. Haritadaki 24 nokta, şirket ofislerini değil hizmet ve koordinasyon ağını gösterir. İletişim: +90 530 505 21 40, evrim@smh-marine.com.
+
+## Machine-readable resources
+
+- [Structured bilingual company data](https://ibrahimtugsan-dot.github.io/smh-marine-test-site/ai-content.json)
+- [XML sitemap](https://ibrahimtugsan-dot.github.io/smh-marine-test-site/sitemap.xml)
+
+## Content status
+
+Project photographs and named case studies are not yet published. Project-specific outcomes, savings, shipyard partnerships, class approvals or vessel references must not be inferred from the service descriptions.
