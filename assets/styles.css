@@ -364,6 +364,10 @@ a.contact-channel:hover::after, a.contact-channel:focus-visible::after { color: 
 .projects-hero h1 { max-width: 860px; margin: 0; font-size: clamp(3.5rem, 7vw, 7rem); letter-spacing: -.06em; line-height: .9; }
 .projects-hero-content > p:last-child { max-width: 700px; margin: 34px 0 0; color: rgba(255,255,255,.72); font-size: 1.08rem; }
 .portfolio-section { background: white; }
+.project-archive-notice { display: grid; grid-template-columns: minmax(280px,.82fr) minmax(0,1.18fr); gap: clamp(36px,6vw,84px); align-items: center; margin-bottom: 64px; padding: clamp(28px,4vw,46px); border-left: 4px solid var(--orange); color: white; background: linear-gradient(118deg, #0b2f49, var(--ink)); box-shadow: 0 20px 55px rgba(3,24,39,.12); }
+.project-archive-notice .section-kicker { margin-bottom: 12px; }
+.project-archive-notice h2 { max-width: 540px; margin: 0; font-size: clamp(1.7rem,2.7vw,2.65rem); line-height: 1.06; letter-spacing: -.035em; }
+.project-archive-notice > p { max-width: 650px; margin: 0; color: rgba(255,255,255,.78); font-size: 1.03rem; line-height: 1.7; }
 .portfolio-intro { display: grid; grid-template-columns: .92fr 1.08fr; gap: clamp(48px, 7vw, 96px); align-items: end; }
 .portfolio-intro h2 { max-width: 590px; font-size: clamp(2.5rem, 4.5vw, 4.7rem); }
 .portfolio-intro-copy > p:first-child { max-width: 620px; margin: 0; color: #38566a; font-size: 1.08rem; }
@@ -476,7 +480,7 @@ html[lang="tr"] .hero h1 { letter-spacing: -.045em; line-height: 1; }
   .process-grid, .contact-grid, .detail-scope-grid, .detail-cta-grid { grid-template-columns: 1fr; gap: 48px; }
   .detail-promise { position: static; }
   .urgent-callout { grid-template-columns: 1fr; gap: 18px; }
-  .portfolio-intro, .project-case-head, .project-cta { grid-template-columns: 1fr; gap: 46px; }
+  .project-archive-notice, .portfolio-intro, .project-case-head, .project-cta { grid-template-columns: 1fr; gap: 32px; }
   .project-gallery { grid-template-rows: repeat(2, minmax(185px, 30vw)); }
   .project-gallery-archive { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: none; }
   .project-gallery-archive .project-photo { height: 230px; }
@@ -558,6 +562,9 @@ html[lang="tr"] .hero h1 { letter-spacing: -.045em; line-height: 1; }
   .projects-hero h1, .detail-hero h1 { font-size: clamp(2.25rem, 9.8vw, 3.15rem); line-height: 1.03; letter-spacing: -.03em; }
   html[lang="tr"] .projects-hero h1, html[lang="tr"] .detail-hero h1 { font-size: clamp(2.1rem, 9.2vw, 2.9rem); line-height: 1.06; letter-spacing: -.02em; }
   .portfolio-intro h2, .detail-promise h2 { font-size: clamp(1.9rem, 8.2vw, 2.45rem); line-height: 1.11; }
+  .project-archive-notice { margin-bottom: 42px; padding: 26px 22px; }
+  .project-archive-notice h2 { font-size: clamp(1.65rem,7.5vw,2.1rem); line-height: 1.1; }
+  .project-archive-notice > p { font-size: 1rem; line-height: 1.65; }
   .project-list { gap: 36px; }
   .project-case-head { gap: 24px; padding: 30px 20px; }
   .project-case h2 { font-size: clamp(1.85rem, 8vw, 2.4rem); line-height: 1.08; letter-spacing: -.025em; }

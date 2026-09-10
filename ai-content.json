@@ -122,6 +122,10 @@
     "source_files_represented": 47,
     "hero_images": 1,
     "gallery_images": 46,
+    "additional_material": {
+      "en": "The published selection is part of a wider project archive. Additional photographs, detailed work scopes and technical records may be shared on request, subject to client confidentiality.",
+      "tr": "Yayımlanan seçki daha geniş bir proje arşivinin parçasıdır. İlave fotoğraflar, ayrıntılı iş kapsamları ve teknik kayıtlar müşteri gizliliği korunarak talep üzerine paylaşılabilir."
+    },
     "categories": [
       {"en": "Dry-Docking, Hull and Deck Works", "tr": "Havuzlama, Gövde ve Güverte İşleri"},
       {"en": "Cargo Hold Tank-Top Renewal", "tr": "Yük Ambarı Tank Top Sac Yenilemesi"},
