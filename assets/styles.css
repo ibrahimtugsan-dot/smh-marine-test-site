@@ -358,21 +358,35 @@ a.contact-channel:hover::after, a.contact-channel:focus-visible::after { color: 
 .footer-bottom a { color: inherit; }
 
 .projects-hero { position: relative; min-height: 660px; display: flex; align-items: end; overflow: hidden; color: white; background: var(--ink); }
-.projects-hero-media { position: absolute; inset: 0; background-image: linear-gradient(90deg, rgba(2,19,32,.98), rgba(2,23,39,.78)), url("drydock-hero.jpg"); background-position: center; background-size: cover; }
+.projects-hero-media { position: absolute; inset: 0; background-image: linear-gradient(90deg, rgba(2,19,32,.96), rgba(2,23,39,.66)), url("projects/project-hero-drydocking-aerial-anonymized.webp"); background-position: center 42%; background-size: cover; }
 .projects-hero::after { position: absolute; right: -130px; bottom: -160px; width: 510px; height: 510px; border: 1px solid rgba(255,255,255,.14); border-radius: 50%; content: ""; box-shadow: 0 0 0 70px rgba(255,255,255,.025), 0 0 0 140px rgba(255,255,255,.018); }
 .projects-hero-content { position: relative; z-index: 1; padding-top: 170px; padding-bottom: 92px; }
 .projects-hero h1 { max-width: 860px; margin: 0; font-size: clamp(3.5rem, 7vw, 7rem); letter-spacing: -.06em; line-height: .9; }
 .projects-hero-content > p:last-child { max-width: 700px; margin: 34px 0 0; color: rgba(255,255,255,.72); font-size: 1.08rem; }
 .portfolio-section { background: white; }
-.portfolio-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: 90px; align-items: start; }
-.portfolio-status { padding-top: 4px; }
-.portfolio-status h2 { max-width: 580px; font-size: clamp(2.5rem, 4.5vw, 4.7rem); }
-.portfolio-status > p:last-child { max-width: 570px; margin: 28px 0 0; color: #516b7d; font-size: 1.03rem; }
-.project-category-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
-.project-category-grid div { position: relative; display: flex; min-height: 210px; flex-direction: column; justify-content: space-between; padding: 28px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--paper); }
-.project-category-grid div::after { position: absolute; right: 24px; bottom: 24px; width: 36px; height: 2px; background: var(--orange); content: ""; }
-.project-category-grid span { color: var(--orange); font-size: .76rem; font-weight: 800; letter-spacing: .12em; }
-.project-category-grid strong { max-width: 210px; padding-right: 28px; font-size: 1.35rem; line-height: 1.2; }
+.portfolio-intro { display: grid; grid-template-columns: .92fr 1.08fr; gap: clamp(48px, 7vw, 96px); align-items: end; }
+.portfolio-intro h2 { max-width: 590px; font-size: clamp(2.5rem, 4.5vw, 4.7rem); }
+.portfolio-intro-copy > p:first-child { max-width: 620px; margin: 0; color: #38566a; font-size: 1.08rem; }
+.project-privacy-note { max-width: 620px; margin: 28px 0 0; padding: 18px 22px; border-left: 3px solid var(--orange); color: #516b7d; background: #f2f6f7; font-size: .9rem; }
+.project-showcase-section { padding-top: 0; background: #e9f0f3; }
+.project-list { display: grid; gap: 72px; }
+.project-case { overflow: hidden; border: 1px solid rgba(11,47,73,.14); background: white; box-shadow: 0 20px 55px rgba(3,24,39,.09); }
+.project-case-head { display: grid; grid-template-columns: .86fr 1.14fr; gap: clamp(44px, 6vw, 84px); padding: clamp(38px, 5vw, 64px); }
+.project-case-kicker { margin: 0 0 18px; color: var(--orange); font-size: .72rem; font-weight: 850; letter-spacing: .14em; line-height: 1.35; text-transform: uppercase; }
+.project-case h2 { max-width: 500px; margin: 0; font-size: clamp(2.15rem, 3.4vw, 3.65rem); line-height: .98; letter-spacing: -.045em; }
+.project-case-head > div:last-child > p { max-width: 620px; margin: 0; color: #38566a; font-size: 1.03rem; }
+.project-scope-list { display: grid; margin: 28px 0 0; padding: 0; list-style: none; }
+.project-scope-list li { position: relative; padding: 13px 0 13px 25px; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: .92rem; font-weight: 700; }
+.project-scope-list li::before { position: absolute; top: 1.55em; left: 0; width: 12px; height: 2px; background: var(--orange); content: ""; }
+.project-gallery { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(210px, 22vw)); max-height: 660px; background: var(--ink); }
+.project-photo { position: relative; min-height: 0; margin: 0; overflow: hidden; border: 1px solid rgba(255,255,255,.12); background: var(--ink); }
+.project-photo-feature { grid-column: span 2; grid-row: span 2; }
+.project-gallery-four .project-photo:last-child { grid-column: span 2; }
+.project-gallery-three .project-photo:not(:first-child) { grid-column: span 2; }
+.project-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform .65s ease, filter .65s ease; }
+.project-photo::after { position: absolute; inset: 45% 0 0; pointer-events: none; background: linear-gradient(transparent, rgba(2,19,32,.82)); content: ""; }
+.project-photo figcaption { position: absolute; z-index: 1; right: 0; bottom: 0; left: 0; padding: 38px 20px 17px; color: rgba(255,255,255,.93); font-size: .78rem; font-weight: 750; letter-spacing: .015em; line-height: 1.35; }
+.project-photo:hover img { transform: scale(1.025); filter: saturate(1.06); }
 .project-cta-section { color: white; background: linear-gradient(120deg, var(--ink-soft), var(--ink)); }
 .project-cta { display: grid; grid-template-columns: 1fr .8fr; gap: 90px; align-items: end; }
 .project-cta p { max-width: 520px; margin: 0 0 28px; color: rgba(255,255,255,.68); }
@@ -460,7 +474,8 @@ html[lang="tr"] .hero h1 { letter-spacing: -.045em; line-height: 1; }
   .process-grid, .contact-grid, .detail-scope-grid, .detail-cta-grid { grid-template-columns: 1fr; gap: 48px; }
   .detail-promise { position: static; }
   .urgent-callout { grid-template-columns: 1fr; gap: 18px; }
-  .portfolio-layout, .project-cta { grid-template-columns: 1fr; gap: 46px; }
+  .portfolio-intro, .project-case-head, .project-cta { grid-template-columns: 1fr; gap: 46px; }
+  .project-gallery { grid-template-rows: repeat(2, minmax(185px, 30vw)); }
   .footer-grid { grid-template-columns: 1.3fr 1fr 1fr; gap: 34px; }
   .profile-card { grid-template-columns: minmax(0,.8fr) minmax(0,1.2fr); min-height: 640px; }
 }
@@ -496,7 +511,7 @@ html[lang="tr"] .hero h1 { letter-spacing: -.045em; line-height: 1; }
   .hero-facts span { font-size: .72rem; }
   .section { padding: 76px 0; }
   .china-lead h2, .owner-advantage-lead h2 { font-size: clamp(1.9rem, 8.2vw, 2.45rem); line-height: 1.11; }
-  .china-lead > p:last-child, .owner-advantage-body > p, .intro-copy p, .contact-copy, .projects-hero-content > p:last-child, .portfolio-status > p:last-child, .detail-hero-content > p:last-child, .detail-promise > p:last-child { font-size: 1rem; line-height: 1.65; }
+  .china-lead > p:last-child, .owner-advantage-body > p, .intro-copy p, .contact-copy, .projects-hero-content > p:last-child, .portfolio-intro-copy > p:first-child, .detail-hero-content > p:last-child, .detail-promise > p:last-child { font-size: 1rem; line-height: 1.65; }
   .china-proof { padding: 26px 22px; }
   .china-metrics { grid-template-columns: 1fr; }
   .china-metrics div, .china-metrics div:first-child { padding: 18px 0; border-right: 0; border-bottom: 1px solid rgba(255,255,255,.12); }
@@ -528,7 +543,7 @@ html[lang="tr"] .hero h1 { letter-spacing: -.045em; line-height: 1; }
   .network-summary strong { font-size: 3.5rem; }
   .map-detail { inset: auto; min-width: 0; padding: 14px; }
   .location-index { grid-template-columns: 1fr; }
-  .contact-channels, .project-category-grid { grid-template-columns: 1fr; }
+  .contact-channels { grid-template-columns: 1fr; }
   .contact-channel-address { grid-template-columns: 1fr; min-height: 0; }
   .office-address-copy { padding: 10px 4px 14px; }
   .office-map { grid-template-rows: 210px auto; }
@@ -538,7 +553,15 @@ html[lang="tr"] .hero h1 { letter-spacing: -.045em; line-height: 1; }
   .projects-hero-content { padding-top: 150px; padding-bottom: 70px; }
   .projects-hero h1, .detail-hero h1 { font-size: clamp(2.25rem, 9.8vw, 3.15rem); line-height: 1.03; letter-spacing: -.03em; }
   html[lang="tr"] .projects-hero h1, html[lang="tr"] .detail-hero h1 { font-size: clamp(2.1rem, 9.2vw, 2.9rem); line-height: 1.06; letter-spacing: -.02em; }
-  .portfolio-status h2, .detail-promise h2 { font-size: clamp(1.9rem, 8.2vw, 2.45rem); line-height: 1.11; }
+  .portfolio-intro h2, .detail-promise h2 { font-size: clamp(1.9rem, 8.2vw, 2.45rem); line-height: 1.11; }
+  .project-list { gap: 36px; }
+  .project-case-head { gap: 24px; padding: 30px 20px; }
+  .project-case h2 { font-size: clamp(1.85rem, 8vw, 2.4rem); line-height: 1.08; letter-spacing: -.025em; }
+  .project-privacy-note { margin-top: 22px; padding: 16px 18px; }
+  .project-gallery { grid-template-columns: repeat(2, minmax(0,1fr)); grid-template-rows: none; max-height: none; }
+  .project-photo, .project-photo-feature, .project-gallery-four .project-photo:last-child, .project-gallery-three .project-photo:not(:first-child) { grid-column: auto; grid-row: auto; height: 180px; }
+  .project-photo-feature { grid-column: 1 / -1; height: 260px; }
+  .project-photo figcaption { padding: 30px 12px 12px; font-size: .7rem; }
   .enquiry-builder { grid-template-columns: 1fr; padding: 24px; }
   .enquiry-builder input, .enquiry-builder textarea, .enquiry-builder select { min-height: 48px; font-size: 16px; line-height: 1.35; }
   .enquiry-builder textarea { min-height: 150px; }

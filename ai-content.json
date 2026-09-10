@@ -115,6 +115,25 @@
       }
     }
   ],
+  "project_portfolio": {
+    "url": "https://ibrahimtugsan-dot.github.io/smh-marine-test-site/projects.html",
+    "status": "published_anonymized_photographs",
+    "categories": [
+      {"en": "Dry-Docking, Hull and Deck Works", "tr": "Havuzlama, Gövde ve Güverte İşleri"},
+      {"en": "Cargo Hold Tank-Top Renewal", "tr": "Yük Ambarı Tank Top Sac Yenilemesi"},
+      {"en": "Cargo Pump and Heater Repairs", "tr": "Yük Pompası ve Isıtıcı Onarımları"},
+      {"en": "Shaft, Propeller and Stern Works", "tr": "Şaft, Pervane ve Kıç Bölgesi İşleri"},
+      {"en": "Hydraulic, Mooring and A-60 Renewals", "tr": "Hidrolik, Irgat ve A-60 Yenilemeleri"}
+    ],
+    "privacy": {
+      "en": "Published photographs are anonymized where required. Vessel names, registry details, IMO numbers and identifying markings are not disclosed.",
+      "tr": "Yayımlanan fotoğraflar gerektiğinde anonimleştirilmiştir. Gemi adları, sicil bilgileri, IMO numaraları ve tanımlayıcı işaretler açıklanmaz."
+    },
+    "claim_boundary": {
+      "en": "The gallery documents visible technical work types; it does not identify a vessel, shipyard, location, commercial result, saving or class approval.",
+      "tr": "Galeri, fotoğraflarda görülen teknik iş türlerini belgeler; gemi, tersane, konum, ticari sonuç, tasarruf veya klas onayı belirtmez."
+    }
+  },
   "service_network": {
     "meaning": {
       "en": "Service coordination, technical-contact and partner/shipyard-network coverage; locations are not company offices unless explicitly identified.",
@@ -160,7 +179,7 @@
   },
   "content_qualifications": [
     "Service-network locations must not be interpreted as SMH Marine offices unless explicitly identified.",
-    "Project photographs and named case studies are not yet published.",
+    "Selected anonymized project photographs are published; named vessel and shipyard case studies remain unpublished.",
     "Service descriptions are not evidence of work on a named vessel or at a named shipyard.",
     "No fixed saving, performance result, class approval or shipyard partnership should be inferred."
   ]

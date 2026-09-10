@@ -8,9 +8,10 @@
     <link rel="alternate" type="text/markdown" href="llms.txt" title="SMH Marine AI-readable overview" />
     <link rel="alternate" type="application/json" href="ai-content.json" title="SMH Marine structured company data" />
     <link rel="icon" type="image/png" href="assets/smh-marine-logo-cropped.png" />
+    <link rel="preload" as="image" href="assets/projects/project-hero-drydocking-aerial-anonymized.webp" type="image/webp" />
     <title>Projects | SMH Marine</title>
-    <link rel="stylesheet" href="assets/styles.css?v=54" />
-    <script src="assets/app.js?v=55" defer></script>
+    <link rel="stylesheet" href="assets/styles.css?v=57" />
+    <script src="assets/app.js?v=57" defer></script>
   </head>
   <body data-page="projects">
     <a class="skip-link" href="#main" data-i18n="skipToContent">Skip to content</a>
@@ -45,19 +46,84 @@
         </div>
       </section>
 
-      <section class="portfolio-section section" aria-labelledby="portfolio-status-title">
-        <div class="shell portfolio-layout">
-          <div class="portfolio-status">
-            <p class="section-kicker" data-i18n="projectsStatusLabel">Portfolio status</p>
-            <h2 id="portfolio-status-title" data-i18n="projectsStatusTitle">Project portfolio coming soon</h2>
-            <p data-i18n="projectsStatusCopy">Project photographs and technical case studies are being prepared. Contact us to discuss experience relevant to your vessel.</p>
+      <section class="portfolio-section section" aria-labelledby="portfolio-title">
+        <div class="shell portfolio-intro">
+          <div>
+            <p class="section-kicker" data-i18n="projectsSelectionKicker">Selected project experience</p>
+            <h2 id="portfolio-title" data-i18n="projectsSelectionTitle">Real work, organized by technical scope.</h2>
           </div>
-          <div class="project-category-grid" aria-label="Project categories" data-i18n-aria-label="projectCategoriesLabel">
-            <div><span>01</span><strong data-i18n="projectCategoryRepair">Major repair</strong></div>
-            <div><span>02</span><strong data-i18n="projectCategoryDocking">Dry-docking & steel</strong></div>
-            <div><span>03</span><strong data-i18n="projectCategoryNewbuilding">Newbuilding</strong></div>
-            <div><span>04</span><strong data-i18n="projectCategorySurvey">Survey & inspection</strong></div>
+          <div class="portfolio-intro-copy">
+            <p data-i18n="projectsSelectionCopy">Selected photographs from ship repair and dry-docking work are grouped by the technical scope shown. Project-specific vessel, yard, location and commercial details remain confidential.</p>
+            <p class="project-privacy-note" data-i18n="projectsPrivacy">Vessel names, registry details and identifying markings have been removed from published photographs to protect client confidentiality.</p>
           </div>
+        </div>
+      </section>
+
+      <section class="project-showcase-section section" aria-label="Selected marine project photographs" data-i18n-aria-label="projectsGalleryLabel">
+        <div class="shell project-list">
+          <article class="project-case" aria-labelledby="project-drydocking-title">
+            <div class="project-case-head">
+              <div><p class="project-case-kicker" data-i18n="projectDryKicker">Dry-docking & ship repair</p><h2 id="project-drydocking-title" data-i18n="projectDryTitle">Dry-Docking, Hull & Deck Works</h2></div>
+              <div><p data-i18n="projectDryCopy">Owner-side coordination across docking preparation, hull and deck maintenance, execution control and technical close-out.</p><ul class="project-scope-list"><li data-i18n="projectDryScope1">Dry-docking preparation and owner-side site follow-up</li><li data-i18n="projectDryScope2">Hull, deck coating and preservation works</li><li data-i18n="projectDryScope3">Progress, quality, safety and completion control</li></ul></div>
+            </div>
+            <div class="project-gallery project-gallery-four">
+              <figure class="project-photo project-photo-feature"><img src="assets/projects/drydocking-bow-anonymized-02.webp" width="1447" height="1088" loading="lazy" decoding="async" alt="Bulk carrier bow during dry-docking works" data-i18n-alt="projectDryPhoto1" /><figcaption data-i18n="projectDryPhoto1">Bulk carrier bow during dry-docking works</figcaption></figure>
+              <figure class="project-photo"><img src="assets/projects/drydocking-bow-anonymized-01.webp" width="1447" height="1088" loading="lazy" decoding="async" alt="Hull condition and coating work in dry dock" data-i18n-alt="projectDryPhoto2" /><figcaption data-i18n="projectDryPhoto2">Hull condition and coating work in dry dock</figcaption></figure>
+              <figure class="project-photo"><img src="assets/projects/drydocking-deck-painting.webp" width="1600" height="1200" loading="lazy" decoding="async" alt="Deck coating renewal and preservation work" data-i18n-alt="projectDryPhoto3" /><figcaption data-i18n="projectDryPhoto3">Deck coating renewal and preservation work</figcaption></figure>
+              <figure class="project-photo"><img src="assets/projects/drydocking-deck-piping.webp" width="1600" height="1200" loading="lazy" decoding="async" alt="Tanker deck and piping systems during dry-docking" data-i18n-alt="projectDryPhoto4" /><figcaption data-i18n="projectDryPhoto4">Tanker deck and piping systems during dry-docking</figcaption></figure>
+            </div>
+          </article>
+
+          <article class="project-case" aria-labelledby="project-steel-title">
+            <div class="project-case-head">
+              <div><p class="project-case-kicker" data-i18n="projectSteelKicker">Steel renewal & inspection</p><h2 id="project-steel-title" data-i18n="projectSteelTitle">Cargo Hold Tank-Top Renewal</h2></div>
+              <div><p data-i18n="projectSteelCopy">Condition assessment, work-front preparation, staged steel renewal and verification within a bulk-carrier cargo hold.</p><ul class="project-scope-list"><li data-i18n="projectSteelScope1">Tank-top steel crop-and-renew work</li><li data-i18n="projectSteelScope2">Access, preparation and staged renewal coordination</li><li data-i18n="projectSteelScope3">Ultrasonic thickness measurement and condition verification</li></ul></div>
+            </div>
+            <div class="project-gallery project-gallery-four">
+              <figure class="project-photo project-photo-feature"><img src="assets/projects/cargo-hold-tank-top-renewal-02.webp" width="1600" height="1200" loading="lazy" decoding="async" alt="Cargo hold tank-top steel renewal work area" data-i18n-alt="projectSteelPhoto1" /><figcaption data-i18n="projectSteelPhoto1">Cargo hold tank-top steel renewal work area</figcaption></figure>
+              <figure class="project-photo"><img src="assets/projects/cargo-hold-tank-top-renewal-01.webp" width="1200" height="1600" loading="lazy" decoding="async" alt="Removed tank-top steel and prepared renewal section" data-i18n-alt="projectSteelPhoto2" /><figcaption data-i18n="projectSteelPhoto2">Removed tank-top steel and prepared renewal section</figcaption></figure>
+              <figure class="project-photo"><img src="assets/projects/cargo-hold-tank-top-renewal-03.webp" width="1200" height="1600" loading="lazy" decoding="async" alt="Staged tank-top renewal inside a cargo hold" data-i18n-alt="projectSteelPhoto3" /><figcaption data-i18n="projectSteelPhoto3">Staged tank-top renewal inside a cargo hold</figcaption></figure>
+              <figure class="project-photo"><img src="assets/projects/cargo-hold-ultrasonic-testing.webp" width="1600" height="1200" loading="lazy" decoding="async" alt="Ultrasonic testing on cargo hold structure" data-i18n-alt="projectSteelPhoto4" /><figcaption data-i18n="projectSteelPhoto4">Ultrasonic testing on cargo hold structure</figcaption></figure>
+            </div>
+          </article>
+
+          <article class="project-case" aria-labelledby="project-lpg-title">
+            <div class="project-case-head">
+              <div><p class="project-case-kicker" data-i18n="projectLpgKicker">LPG cargo systems</p><h2 id="project-lpg-title" data-i18n="projectLpgTitle">Cargo Pump & Heater Repairs</h2></div>
+              <div><p data-i18n="projectLpgCopy">Specialist repair coordination for LPG cargo-system machinery from removal and workshop handling to overhaul and reinstatement planning.</p><ul class="project-scope-list"><li data-i18n="projectLpgScope1">Cargo heater inspection and repair</li><li data-i18n="projectLpgScope2">Cargo pump removal, workshop overhaul and reinstatement</li><li data-i18n="projectLpgScope3">Heavy lifting, access and specialist-team coordination</li></ul></div>
+            </div>
+            <div class="project-gallery project-gallery-four">
+              <figure class="project-photo project-photo-feature"><img src="assets/projects/lpg-cargo-pump-workshop.webp" width="1600" height="1200" loading="lazy" decoding="async" alt="Cargo pump assembly in a specialist workshop" data-i18n-alt="projectLpgPhoto2" /><figcaption data-i18n="projectLpgPhoto2">Cargo pump assembly in a specialist workshop</figcaption></figure>
+              <figure class="project-photo"><img src="assets/projects/lpg-cargo-heater-repair.webp" width="1600" height="1200" loading="lazy" decoding="async" alt="LPG cargo heater prepared for repair" data-i18n-alt="projectLpgPhoto1" /><figcaption data-i18n="projectLpgPhoto1">LPG cargo heater prepared for repair</figcaption></figure>
+              <figure class="project-photo"><img src="assets/projects/lpg-cargo-pump-lifting.webp" width="1600" height="1200" loading="lazy" decoding="async" alt="Cargo pump lifting and transport operation" data-i18n-alt="projectLpgPhoto3" /><figcaption data-i18n="projectLpgPhoto3">Cargo pump lifting and transport operation</figcaption></figure>
+              <figure class="project-photo"><img src="assets/projects/lpg-cargo-pump-overhaul.webp" width="1200" height="1600" loading="lazy" decoding="async" alt="Cargo pump overhaul access and scaffolding" data-i18n-alt="projectLpgPhoto4" /><figcaption data-i18n="projectLpgPhoto4">Cargo pump overhaul access and scaffolding</figcaption></figure>
+            </div>
+          </article>
+
+          <article class="project-case" aria-labelledby="project-propulsion-title">
+            <div class="project-case-head">
+              <div><p class="project-case-kicker" data-i18n="projectPropulsionKicker">Propulsion & efficiency</p><h2 id="project-propulsion-title" data-i18n="projectPropulsionTitle">Shaft, Propeller & Stern Works</h2></div>
+              <div><p data-i18n="projectPropulsionCopy">Dry-dock access and specialist work on the propulsion train, propeller surfaces and stern arrangement.</p><ul class="project-scope-list"><li data-i18n="projectPropulsionScope1">Stern and rudder access during dry-docking</li><li data-i18n="projectPropulsionScope2">Intermediate-shaft inspection and grinding</li><li data-i18n="projectPropulsionScope3">Propeller surface preparation and silicone coating</li></ul></div>
+            </div>
+            <div class="project-gallery project-gallery-four">
+              <figure class="project-photo project-photo-feature"><img src="assets/projects/intermediate-shaft-grinding.webp" width="1200" height="1600" loading="lazy" decoding="async" alt="Intermediate-shaft grinding and surface restoration" data-i18n-alt="projectPropulsionPhoto1" /><figcaption data-i18n="projectPropulsionPhoto1">Intermediate-shaft grinding and surface restoration</figcaption></figure>
+              <figure class="project-photo"><img src="assets/projects/propulsion-stern-anonymized.webp" width="1086" height="1448" loading="lazy" decoding="async" alt="Stern and rudder work during dry-docking" data-i18n-alt="projectPropulsionPhoto2" /><figcaption data-i18n="projectPropulsionPhoto2">Stern and rudder work during dry-docking</figcaption></figure>
+              <figure class="project-photo"><img src="assets/projects/propeller-silicone-coating.webp" width="1200" height="1600" loading="lazy" decoding="async" alt="Propeller silicone coating application" data-i18n-alt="projectPropulsionPhoto3" /><figcaption data-i18n="projectPropulsionPhoto3">Propeller silicone coating application</figcaption></figure>
+              <figure class="project-photo"><img src="assets/projects/propeller-surface-work.webp" width="1280" height="1706" loading="lazy" decoding="async" alt="Propeller surface preparation before completion" data-i18n-alt="projectPropulsionPhoto4" /><figcaption data-i18n="projectPropulsionPhoto4">Propeller surface preparation before completion</figcaption></figure>
+            </div>
+          </article>
+
+          <article class="project-case" aria-labelledby="project-deck-title">
+            <div class="project-case-head">
+              <div><p class="project-case-kicker" data-i18n="projectDeckKicker">Deck machinery & fire integrity</p><h2 id="project-deck-title" data-i18n="projectDeckTitle">Hydraulic, Mooring & A-60 Renewals</h2></div>
+              <div><p data-i18n="projectDeckCopy">Focused renewal and repair scopes supporting reliable deck machinery and the vessel’s fire-integrity arrangements.</p><ul class="project-scope-list"><li data-i18n="projectDeckScope1">Hatch-cover hydraulic line renewal</li><li data-i18n="projectDeckScope2">Mooring winch gear inspection and repair</li><li data-i18n="projectDeckScope3">Engine-room A-60 insulation renewal</li></ul></div>
+            </div>
+            <div class="project-gallery project-gallery-three">
+              <figure class="project-photo project-photo-feature"><img src="assets/projects/engine-room-a60-insulation.webp" width="1600" height="1200" loading="lazy" decoding="async" alt="Engine-room A-60 insulation renewal" data-i18n-alt="projectDeckPhoto1" /><figcaption data-i18n="projectDeckPhoto1">Engine-room A-60 insulation renewal</figcaption></figure>
+              <figure class="project-photo"><img src="assets/projects/hatch-cover-hydraulic-renewal.webp" width="1200" height="1600" loading="lazy" decoding="async" alt="Hatch-cover hydraulic line renewal work" data-i18n-alt="projectDeckPhoto2" /><figcaption data-i18n="projectDeckPhoto2">Hatch-cover hydraulic line renewal work</figcaption></figure>
+              <figure class="project-photo"><img src="assets/projects/mooring-winch-gear-repair.webp" width="1200" height="1600" loading="lazy" decoding="async" alt="Mooring winch gear opened for repair" data-i18n-alt="projectDeckPhoto3" /><figcaption data-i18n="projectDeckPhoto3">Mooring winch gear opened for repair</figcaption></figure>
+            </div>
+          </article>
         </div>
       </section>
 
