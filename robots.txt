@@ -8,4 +8,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://ibrahimtugsan-dot.github.io/smh-marine-test-site/sitemap.xml
+Sitemap: https://smh-marine.com/sitemap.xml

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "last_updated": "2026-09-10",
-  "source_url": "https://ibrahimtugsan-dot.github.io/smh-marine-test-site/",
+  "source_url": "https://smh-marine.com/",
   "languages": ["en", "tr"],
   "organization": {
     "name": "SMH Marine",
@@ -44,7 +44,7 @@
   "services": [
     {
       "id": "ship-repair-dry-docking",
-      "url": "https://ibrahimtugsan-dot.github.io/smh-marine-test-site/ship-repair.html",
+      "url": "https://smh-marine.com/ship-repair.html",
       "name": {"en": "Ship Repair and Dry-Docking", "tr": "Gemi Onarımı ve Havuzlama"},
       "description": {
         "en": "Owner-side repair planning and site control, including specification, shipyard comparison, price negotiation, docking, steel renewal, supervision, variation control, invoice review and close-out.",
@@ -53,7 +53,7 @@
     },
     {
       "id": "main-engine-crankshaft",
-      "url": "https://ibrahimtugsan-dot.github.io/smh-marine-test-site/engine-crankshaft.html",
+      "url": "https://smh-marine.com/engine-crankshaft.html",
       "name": {"en": "Main Engine and Crankshaft Works", "tr": "Ana Makine ve Krankşaft İşleri"},
       "description": {
         "en": "Coordination for two-stroke and four-stroke engine repairs, crankshaft inspection and dimensional measurement, machining or recovery, alignment, testing and final technical records.",
@@ -62,7 +62,7 @@
     },
     {
       "id": "owner-representation",
-      "url": "https://ibrahimtugsan-dot.github.io/smh-marine-test-site/owner-representation.html",
+      "url": "https://smh-marine.com/owner-representation.html",
       "name": {"en": "Owner Representation", "tr": "Armatör Temsilciliği"},
       "description": {
         "en": "Independent technical and commercial owner-side control covering tender and contract scope, price benchmarking, negotiation, variations, progress, quality, acceptance and invoice review.",
@@ -71,7 +71,7 @@
     },
     {
       "id": "newbuilding-supervision",
-      "url": "https://ibrahimtugsan-dot.github.io/smh-marine-test-site/newbuilding.html",
+      "url": "https://smh-marine.com/newbuilding.html",
       "name": {"en": "Newbuilding Supervision", "tr": "Yeni İnşa Gözetimi"},
       "description": {
         "en": "Owner-side continuity from contract specification and pricing through site-team planning, construction surveillance, tests, trials, documentation and delivery.",
@@ -80,7 +80,7 @@
     },
     {
       "id": "pre-purchase-inspection",
-      "url": "https://ibrahimtugsan-dot.github.io/smh-marine-test-site/pre-purchase.html",
+      "url": "https://smh-marine.com/pre-purchase.html",
       "name": {"en": "Pre-Purchase Inspection", "tr": "Satın Alma Öncesi İnceleme"},
       "description": {
         "en": "Document review and onboard condition inspection covering hull, deck, cargo systems, machinery, maintenance, compliance, survey exposure and repair-budget input.",
@@ -89,7 +89,7 @@
     },
     {
       "id": "special-survey-preparation",
-      "url": "https://ibrahimtugsan-dot.github.io/smh-marine-test-site/special-survey.html",
+      "url": "https://smh-marine.com/special-survey.html",
       "name": {"en": "Special Survey Preparation", "tr": "Özel Sörvey Hazırlığı"},
       "description": {
         "en": "Pre-docking inspection, class and statutory survey preparation, steel and machinery work-list development, repair specification, yard quotation review and docking planning.",
@@ -98,7 +98,7 @@
     },
     {
       "id": "retrofit-energy-efficiency",
-      "url": "https://ibrahimtugsan-dot.github.io/smh-marine-test-site/retrofit-energy-efficiency.html",
+      "url": "https://smh-marine.com/retrofit-energy-efficiency.html",
       "name": {"en": "Retrofit Operations and Energy Efficiency", "tr": "Retrofit Operasyonları ve Enerji Verimliliği"},
       "description": {
         "en": "Vessel-specific feasibility, engineering, shipyard tendering and installation control for shaft generators, LED conversion, propeller optimization or renewal, stern-form changes and approved wake-flow devices.",
@@ -107,7 +107,7 @@
     },
     {
       "id": "emergency-repairs-china",
-      "url": "https://ibrahimtugsan-dot.github.io/smh-marine-test-site/#china",
+      "url": "https://smh-marine.com/#china",
       "name": {"en": "Emergency Repair Coordination in China", "tr": "Çin'de Acil Onarım Koordinasyonu"},
       "description": {
         "en": "Local coordination for electrical faults, HVAC and refrigeration, cranes, two-stroke and four-stroke engines, windlasses, mooring winches, deck machinery, riding squads, afloat and voyage repairs.",
@@ -116,7 +116,7 @@
     }
   ],
   "project_portfolio": {
-    "url": "https://ibrahimtugsan-dot.github.io/smh-marine-test-site/projects.html",
+    "url": "https://smh-marine.com/projects.html",
     "status": "published_anonymized_photographs",
     "source_files_reviewed": 47,
     "source_files_represented": 47,
@@ -178,12 +178,12 @@
     "phone": "+90 530 505 21 40",
     "whatsapp": "+90 530 505 21 40",
     "wechat": "+90 530 505 21 40",
-    "email": "evrim@smh-marine.com",
+    "email": "info@smh-marine.com",
     "office": {
       "label": {"en": "Shanghai office", "tr": "Şanghay ofisi"},
       "address": "Room 1305, No. 1500 Century Avenue, Shanghai, China"
     },
-    "enquiry_url": "https://ibrahimtugsan-dot.github.io/smh-marine-test-site/#contact"
+    "enquiry_url": "https://smh-marine.com/#contact"
   },
   "content_qualifications": [
     "Service-network locations must not be interpreted as SMH Marine offices unless explicitly identified.",

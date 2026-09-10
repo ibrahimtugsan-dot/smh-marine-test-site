@@ -13,14 +13,14 @@
 
 ## Specialist services
 
-- [Ship Repair and Dry-Docking](https://ibrahimtugsan-dot.github.io/smh-marine-test-site/ship-repair.html): repair specification, shipyard comparison, price negotiation, docking, steel renewal, supervision, variation control and close-out.
-- [Main Engine and Crankshaft Works](https://ibrahimtugsan-dot.github.io/smh-marine-test-site/engine-crankshaft.html): two-stroke and four-stroke engine repairs, crankshaft inspection and repair coordination, alignment, testing and technical records.
-- [Owner Representation](https://ibrahimtugsan-dot.github.io/smh-marine-test-site/owner-representation.html): independent owner-side technical and commercial control from tender review to final invoice.
-- [Newbuilding Supervision](https://ibrahimtugsan-dot.github.io/smh-marine-test-site/newbuilding.html): contract, pricing, site-team, quality, trials and delivery support.
-- [Pre-Purchase Inspection](https://ibrahimtugsan-dot.github.io/smh-marine-test-site/pre-purchase.html): document review, onboard inspection, condition assessment, risk identification and repair-budget input.
-- [Special Survey Preparation](https://ibrahimtugsan-dot.github.io/smh-marine-test-site/special-survey.html): pre-docking inspection, class and statutory survey preparation, repair specification, tender review and docking planning.
-- [Retrofit Operations and Energy Efficiency](https://ibrahimtugsan-dot.github.io/smh-marine-test-site/retrofit-energy-efficiency.html): feasibility, shaft generators, LED conversion, propeller and stern-flow improvements, installation control and performance verification.
-- [Emergency repair coordination in China](https://ibrahimtugsan-dot.github.io/smh-marine-test-site/#china): electrical faults, HVAC and refrigeration, cranes, two-stroke and four-stroke engines, windlasses, mooring winches, deck machinery, afloat and voyage repairs.
+- [Ship Repair and Dry-Docking](https://smh-marine.com/ship-repair.html): repair specification, shipyard comparison, price negotiation, docking, steel renewal, supervision, variation control and close-out.
+- [Main Engine and Crankshaft Works](https://smh-marine.com/engine-crankshaft.html): two-stroke and four-stroke engine repairs, crankshaft inspection and repair coordination, alignment, testing and technical records.
+- [Owner Representation](https://smh-marine.com/owner-representation.html): independent owner-side technical and commercial control from tender review to final invoice.
+- [Newbuilding Supervision](https://smh-marine.com/newbuilding.html): contract, pricing, site-team, quality, trials and delivery support.
+- [Pre-Purchase Inspection](https://smh-marine.com/pre-purchase.html): document review, onboard inspection, condition assessment, risk identification and repair-budget input.
+- [Special Survey Preparation](https://smh-marine.com/special-survey.html): pre-docking inspection, class and statutory survey preparation, repair specification, tender review and docking planning.
+- [Retrofit Operations and Energy Efficiency](https://smh-marine.com/retrofit-energy-efficiency.html): feasibility, shaft generators, LED conversion, propeller and stern-flow improvements, installation control and performance verification.
+- [Emergency repair coordination in China](https://smh-marine.com/#china): electrical faults, HVAC and refrigeration, cranes, two-stroke and four-stroke engines, windlasses, mooring winches, deck machinery, afloat and voyage repairs.
 
 ## Service network
 
@@ -31,18 +31,18 @@ These locations represent service coordination, technical contacts and partner/s
 ## Contact
 
 - Phone, WhatsApp and WeChat: +90 530 505 21 40
-- Email: evrim@smh-marine.com
-- [Technical enquiry and contact](https://ibrahimtugsan-dot.github.io/smh-marine-test-site/#contact)
-- [Complete project portfolio](https://ibrahimtugsan-dot.github.io/smh-marine-test-site/projects.html): all 47 supplied photographs are represented anonymously and grouped by visible technical work scope.
+- Email: info@smh-marine.com
+- [Technical enquiry and contact](https://smh-marine.com/#contact)
+- [Complete project portfolio](https://smh-marine.com/projects.html): all 47 supplied photographs are represented anonymously and grouped by visible technical work scope.
 
 ## Türkçe kısa özet
 
-SMH Marine, merkezi Çin'de bulunan; gemi onarımı, deniz mühendisliği, yeni inşa, sörvey hazırlığı, enerji verimliliği ve armatör adına teknik-ticari kontrol hizmetleri sunan bir denizcilik şirketidir. Haritadaki 24 nokta, şirket ofislerini değil hizmet ve koordinasyon ağını gösterir. İletişim: +90 530 505 21 40, evrim@smh-marine.com.
+SMH Marine, merkezi Çin'de bulunan; gemi onarımı, deniz mühendisliği, yeni inşa, sörvey hazırlığı, enerji verimliliği ve armatör adına teknik-ticari kontrol hizmetleri sunan bir denizcilik şirketidir. Haritadaki 24 nokta, şirket ofislerini değil hizmet ve koordinasyon ağını gösterir. İletişim: +90 530 505 21 40, info@smh-marine.com.
 
 ## Machine-readable resources
 
-- [Structured bilingual company data](https://ibrahimtugsan-dot.github.io/smh-marine-test-site/ai-content.json)
-- [XML sitemap](https://ibrahimtugsan-dot.github.io/smh-marine-test-site/sitemap.xml)
+- [Structured bilingual company data](https://smh-marine.com/ai-content.json)
+- [XML sitemap](https://smh-marine.com/sitemap.xml)
 
 ## Content status
 
