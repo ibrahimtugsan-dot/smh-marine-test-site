@@ -33,7 +33,7 @@ These locations represent service coordination, technical contacts and partner/s
 - Phone, WhatsApp and WeChat: +90 530 505 21 40
 - Email: evrim@smh-marine.com
 - [Technical enquiry and contact](https://ibrahimtugsan-dot.github.io/smh-marine-test-site/#contact)
-- [Selected project portfolio](https://ibrahimtugsan-dot.github.io/smh-marine-test-site/projects.html): anonymized photographs grouped by visible technical work scope.
+- [Complete project portfolio](https://ibrahimtugsan-dot.github.io/smh-marine-test-site/projects.html): all 47 supplied photographs are represented anonymously and grouped by visible technical work scope.
 
 ## Türkçe kısa özet
 
@@ -46,4 +46,4 @@ SMH Marine, merkezi Çin'de bulunan; gemi onarımı, deniz mühendisliği, yeni 
 
 ## Content status
 
-Selected anonymized project photographs are published and grouped by the visible technical work scope. Vessel names, registry details, IMO numbers and identifying markings have been removed where required. Named vessel, shipyard, location, commercial result, saving, class approval or partnership claims are not published and must not be inferred.
+All 47 supplied project photographs are represented: one hero image and 46 gallery images grouped by visible technical work scope. Vessel names, registry details, IMO numbers and identifying markings have been removed where required. Named vessel, shipyard, location, commercial result, saving, class approval or partnership claims are not published and must not be inferred.

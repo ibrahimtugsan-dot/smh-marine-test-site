@@ -118,6 +118,10 @@
   "project_portfolio": {
     "url": "https://ibrahimtugsan-dot.github.io/smh-marine-test-site/projects.html",
     "status": "published_anonymized_photographs",
+    "source_files_reviewed": 47,
+    "source_files_represented": 47,
+    "hero_images": 1,
+    "gallery_images": 46,
     "categories": [
       {"en": "Dry-Docking, Hull and Deck Works", "tr": "Havuzlama, Gövde ve Güverte İşleri"},
       {"en": "Cargo Hold Tank-Top Renewal", "tr": "Yük Ambarı Tank Top Sac Yenilemesi"},
@@ -179,7 +183,7 @@
   },
   "content_qualifications": [
     "Service-network locations must not be interpreted as SMH Marine offices unless explicitly identified.",
-    "Selected anonymized project photographs are published; named vessel and shipyard case studies remain unpublished.",
+    "All 47 supplied project photographs are represented in the anonymized portfolio; named vessel and shipyard case studies remain unpublished.",
     "Service descriptions are not evidence of work on a named vessel or at a named shipyard.",
     "No fixed saving, performance result, class approval or shipyard partnership should be inferred."
   ]

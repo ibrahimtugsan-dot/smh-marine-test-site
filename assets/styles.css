@@ -387,6 +387,8 @@ a.contact-channel:hover::after, a.contact-channel:focus-visible::after { color: 
 .project-photo::after { position: absolute; inset: 45% 0 0; pointer-events: none; background: linear-gradient(transparent, rgba(2,19,32,.82)); content: ""; }
 .project-photo figcaption { position: absolute; z-index: 1; right: 0; bottom: 0; left: 0; padding: 38px 20px 17px; color: rgba(255,255,255,.93); font-size: .78rem; font-weight: 750; letter-spacing: .015em; line-height: 1.35; }
 .project-photo:hover img { transform: scale(1.025); filter: saturate(1.06); }
+.project-gallery-archive { grid-template-columns: repeat(4, minmax(0, 1fr)); grid-template-rows: none; max-height: none; margin-top: 1px; }
+.project-gallery-archive .project-photo { height: clamp(220px, 20vw, 300px); }
 .project-cta-section { color: white; background: linear-gradient(120deg, var(--ink-soft), var(--ink)); }
 .project-cta { display: grid; grid-template-columns: 1fr .8fr; gap: 90px; align-items: end; }
 .project-cta p { max-width: 520px; margin: 0 0 28px; color: rgba(255,255,255,.68); }
@@ -476,6 +478,8 @@ html[lang="tr"] .hero h1 { letter-spacing: -.045em; line-height: 1; }
   .urgent-callout { grid-template-columns: 1fr; gap: 18px; }
   .portfolio-intro, .project-case-head, .project-cta { grid-template-columns: 1fr; gap: 46px; }
   .project-gallery { grid-template-rows: repeat(2, minmax(185px, 30vw)); }
+  .project-gallery-archive { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: none; }
+  .project-gallery-archive .project-photo { height: 230px; }
   .footer-grid { grid-template-columns: 1.3fr 1fr 1fr; gap: 34px; }
   .profile-card { grid-template-columns: minmax(0,.8fr) minmax(0,1.2fr); min-height: 640px; }
 }
@@ -561,6 +565,8 @@ html[lang="tr"] .hero h1 { letter-spacing: -.045em; line-height: 1; }
   .project-gallery { grid-template-columns: repeat(2, minmax(0,1fr)); grid-template-rows: none; max-height: none; }
   .project-photo, .project-photo-feature, .project-gallery-four .project-photo:last-child, .project-gallery-three .project-photo:not(:first-child) { grid-column: auto; grid-row: auto; height: 180px; }
   .project-photo-feature { grid-column: 1 / -1; height: 260px; }
+  .project-gallery-archive { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .project-gallery-archive .project-photo { height: 180px; }
   .project-photo figcaption { padding: 30px 12px 12px; font-size: .7rem; }
   .enquiry-builder { grid-template-columns: 1fr; padding: 24px; }
   .enquiry-builder input, .enquiry-builder textarea, .enquiry-builder select { min-height: 48px; font-size: 16px; line-height: 1.35; }
